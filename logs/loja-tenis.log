@@ -1,0 +1,2162 @@
+11/07/2025 18:50:34 [restartedMain] INFO  c.lojatenis.LojaTenisApiApplication - Starting LojaTenisApiApplication using Java 21.0.6 with PID 9792 (C:\Users\Allef\IdeaProjects\loja-tenis-api\target\classes started by Allef in C:\Users\Allef\IdeaProjects\loja-tenis-api)
+11/07/2025 18:50:34 [restartedMain] INFO  c.lojatenis.LojaTenisApiApplication - No active profile set, falling back to 1 default profile: "default"
+11/07/2025 18:50:34 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+11/07/2025 18:50:34 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+11/07/2025 18:50:34 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+11/07/2025 18:50:34 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 39 ms. Found 5 JPA repository interfaces.
+11/07/2025 18:50:35 [restartedMain] DEBUG o.s.a.a.a.ReflectiveAspectJAdvisorFactory - Found AspectJ method: public java.lang.Object com.lojatenis.config.DatabaseLogger.logDatabaseOperation(org.aspectj.lang.ProceedingJoinPoint) throws java.lang.Throwable
+11/07/2025 18:50:35 [restartedMain] DEBUG o.s.a.a.a.ReflectiveAspectJAdvisorFactory - Found AspectJ method: public java.lang.Object com.lojatenis.config.DatabaseLogger.logServiceOperation(org.aspectj.lang.ProceedingJoinPoint) throws java.lang.Throwable
+11/07/2025 18:50:35 [restartedMain] DEBUG o.s.a.a.a.ReflectiveAspectJAdvisorFactory - Found AspectJ method: public java.lang.Object com.lojatenis.config.LoggingAspect.logDatabaseOperation(org.aspectj.lang.ProceedingJoinPoint) throws java.lang.Throwable
+11/07/2025 18:50:35 [restartedMain] DEBUG o.s.a.a.a.ReflectiveAspectJAdvisorFactory - Found AspectJ method: public java.lang.Object com.lojatenis.config.LoggingAspect.logServiceOperation(org.aspectj.lang.ProceedingJoinPoint) throws java.lang.Throwable
+11/07/2025 18:50:35 [restartedMain] DEBUG o.s.a.a.a.ReflectiveAspectJAdvisorFactory - Found AspectJ method: public void org.springframework.beans.factory.aspectj.AbstractDependencyInjectionAspect.ajc$before$org_springframework_beans_factory_aspectj_AbstractDependencyInjectionAspect$1$e854fa65(java.lang.Object)
+11/07/2025 18:50:35 [restartedMain] DEBUG o.s.a.a.a.ReflectiveAspectJAdvisorFactory - Found AspectJ method: public void org.springframework.beans.factory.aspectj.AbstractDependencyInjectionAspect.ajc$afterReturning$org_springframework_beans_factory_aspectj_AbstractDependencyInjectionAspect$2$1ea6722c(java.lang.Object)
+11/07/2025 18:50:35 [restartedMain] DEBUG o.s.a.a.a.ReflectiveAspectJAdvisorFactory - Found AspectJ method: public void org.springframework.beans.factory.aspectj.AbstractDependencyInjectionAspect.ajc$afterReturning$org_springframework_beans_factory_aspectj_AbstractDependencyInjectionAspect$3$6aa27052(java.lang.Object)
+11/07/2025 18:50:35 [restartedMain] DEBUG o.s.a.a.AspectJExpressionPointcut - Pointcut parser rejected expression [(beanConstruction(bean) && (preConstructionCondition() && inConfigurableBean()))]: java.lang.IllegalArgumentException: Pointcut is not well-formed: expecting 'identifier' at character position 0
+
+^
+
+11/07/2025 18:50:35 [restartedMain] DEBUG o.s.a.a.AspectJExpressionPointcut - Pointcut parser rejected expression [(beanConstruction(bean) && (postConstructionCondition() && inConfigurableBean()))]: java.lang.IllegalArgumentException: Pointcut is not well-formed: expecting 'identifier' at character position 0
+
+^
+
+11/07/2025 18:50:35 [restartedMain] DEBUG o.s.a.a.AspectJExpressionPointcut - Pointcut parser rejected expression [(beanDeserialization(bean) && inConfigurableBean())]: java.lang.IllegalArgumentException: Pointcut is not well-formed: expecting 'identifier' at character position 0
+
+^
+
+11/07/2025 18:50:35 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+11/07/2025 18:50:35 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+11/07/2025 18:50:35 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.42]
+11/07/2025 18:50:35 [restartedMain] INFO  o.a.c.c.C.[.[localhost].[/api] - Initializing Spring embedded WebApplicationContext
+11/07/2025 18:50:35 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1564 ms
+11/07/2025 18:50:35 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+11/07/2025 18:50:35 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.18.Final
+11/07/2025 18:50:35 [restartedMain] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+11/07/2025 18:50:36 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+11/07/2025 18:50:36 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+11/07/2025 18:50:36 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@67276b5e
+11/07/2025 18:50:36 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+11/07/2025 18:50:36 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+11/07/2025 18:50:36 [restartedMain] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 17.5
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+11/07/2025 18:50:37 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+11/07/2025 18:50:37 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+11/07/2025 18:50:38 [restartedMain] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+11/07/2025 18:50:38 [restartedMain] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+11/07/2025 18:50:39 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+11/07/2025 18:50:40 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/api'
+11/07/2025 18:50:40 [restartedMain] INFO  c.lojatenis.LojaTenisApiApplication - Started LojaTenisApiApplication in 6.553 seconds (process running for 7.524)
+11/07/2025 18:51:45 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+11/07/2025 18:51:45 [Thread-5] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+11/07/2025 18:51:45 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+11/07/2025 18:51:45 [Thread-5] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+11/07/2025 18:51:45 [Thread-5] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+11/07/2025 18:51:45 [Thread-5] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+11/07/2025 18:51:45 [restartedMain] INFO  c.lojatenis.LojaTenisApiApplication - Starting LojaTenisApiApplication using Java 21.0.6 with PID 9792 (C:\Users\Allef\IdeaProjects\loja-tenis-api\target\classes started by Allef in C:\Users\Allef\IdeaProjects\loja-tenis-api)
+11/07/2025 18:51:45 [restartedMain] INFO  c.lojatenis.LojaTenisApiApplication - No active profile set, falling back to 1 default profile: "default"
+11/07/2025 18:51:46 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+11/07/2025 18:51:46 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 26 ms. Found 5 JPA repository interfaces.
+11/07/2025 18:51:46 [restartedMain] DEBUG o.s.a.a.a.ReflectiveAspectJAdvisorFactory - Found AspectJ method: public java.lang.Object com.lojatenis.config.DatabaseLogger.logDatabaseOperation(org.aspectj.lang.ProceedingJoinPoint) throws java.lang.Throwable
+11/07/2025 18:51:46 [restartedMain] DEBUG o.s.a.a.a.ReflectiveAspectJAdvisorFactory - Found AspectJ method: public java.lang.Object com.lojatenis.config.DatabaseLogger.logServiceOperation(org.aspectj.lang.ProceedingJoinPoint) throws java.lang.Throwable
+11/07/2025 18:51:46 [restartedMain] DEBUG o.s.a.a.a.ReflectiveAspectJAdvisorFactory - Found AspectJ method: public java.lang.Object com.lojatenis.config.LoggingAspect.logDatabaseOperation(org.aspectj.lang.ProceedingJoinPoint) throws java.lang.Throwable
+11/07/2025 18:51:46 [restartedMain] DEBUG o.s.a.a.a.ReflectiveAspectJAdvisorFactory - Found AspectJ method: public java.lang.Object com.lojatenis.config.LoggingAspect.logServiceOperation(org.aspectj.lang.ProceedingJoinPoint) throws java.lang.Throwable
+11/07/2025 18:51:46 [restartedMain] DEBUG o.s.a.a.a.ReflectiveAspectJAdvisorFactory - Found AspectJ method: public void org.springframework.beans.factory.aspectj.AbstractDependencyInjectionAspect.ajc$before$org_springframework_beans_factory_aspectj_AbstractDependencyInjectionAspect$1$e854fa65(java.lang.Object)
+11/07/2025 18:51:46 [restartedMain] DEBUG o.s.a.a.a.ReflectiveAspectJAdvisorFactory - Found AspectJ method: public void org.springframework.beans.factory.aspectj.AbstractDependencyInjectionAspect.ajc$afterReturning$org_springframework_beans_factory_aspectj_AbstractDependencyInjectionAspect$2$1ea6722c(java.lang.Object)
+11/07/2025 18:51:46 [restartedMain] DEBUG o.s.a.a.a.ReflectiveAspectJAdvisorFactory - Found AspectJ method: public void org.springframework.beans.factory.aspectj.AbstractDependencyInjectionAspect.ajc$afterReturning$org_springframework_beans_factory_aspectj_AbstractDependencyInjectionAspect$3$6aa27052(java.lang.Object)
+11/07/2025 18:51:46 [restartedMain] DEBUG o.s.a.a.AspectJExpressionPointcut - Pointcut parser rejected expression [(beanConstruction(bean) && (preConstructionCondition() && inConfigurableBean()))]: java.lang.IllegalArgumentException: Pointcut is not well-formed: expecting 'identifier' at character position 0
+
+^
+
+11/07/2025 18:51:46 [restartedMain] DEBUG o.s.a.a.AspectJExpressionPointcut - Pointcut parser rejected expression [(beanConstruction(bean) && (postConstructionCondition() && inConfigurableBean()))]: java.lang.IllegalArgumentException: Pointcut is not well-formed: expecting 'identifier' at character position 0
+
+^
+
+11/07/2025 18:51:46 [restartedMain] DEBUG o.s.a.a.AspectJExpressionPointcut - Pointcut parser rejected expression [(beanDeserialization(bean) && inConfigurableBean())]: java.lang.IllegalArgumentException: Pointcut is not well-formed: expecting 'identifier' at character position 0
+
+^
+
+11/07/2025 18:51:46 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+11/07/2025 18:51:46 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+11/07/2025 18:51:46 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.42]
+11/07/2025 18:51:46 [restartedMain] INFO  o.a.c.c.C.[.[localhost].[/api] - Initializing Spring embedded WebApplicationContext
+11/07/2025 18:51:46 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 575 ms
+11/07/2025 18:51:46 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+11/07/2025 18:51:46 [restartedMain] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+11/07/2025 18:51:46 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+11/07/2025 18:51:46 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Starting...
+11/07/2025 18:51:46 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-2 - Added connection org.postgresql.jdbc.PgConnection@6e8bb5c4
+11/07/2025 18:51:46 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Start completed.
+11/07/2025 18:51:46 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+11/07/2025 18:51:46 [restartedMain] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-2)']
+	Database driver: undefined/unknown
+	Database version: 17.5
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+11/07/2025 18:51:46 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+11/07/2025 18:51:47 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+11/07/2025 18:51:47 [restartedMain] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+11/07/2025 18:51:49 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+11/07/2025 18:51:49 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/api'
+11/07/2025 18:51:49 [restartedMain] INFO  c.lojatenis.LojaTenisApiApplication - Started LojaTenisApiApplication in 3.489 seconds (process running for 76.914)
+11/07/2025 18:51:49 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+11/07/2025 18:51:54 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+11/07/2025 18:51:54 [Thread-7] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+11/07/2025 18:51:54 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+11/07/2025 18:51:55 [Thread-7] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+11/07/2025 18:51:55 [Thread-7] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown initiated...
+11/07/2025 18:51:55 [Thread-7] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown completed.
+11/07/2025 18:51:55 [restartedMain] INFO  c.lojatenis.LojaTenisApiApplication - Starting LojaTenisApiApplication using Java 21.0.6 with PID 9792 (C:\Users\Allef\IdeaProjects\loja-tenis-api\target\classes started by Allef in C:\Users\Allef\IdeaProjects\loja-tenis-api)
+11/07/2025 18:51:55 [restartedMain] INFO  c.lojatenis.LojaTenisApiApplication - No active profile set, falling back to 1 default profile: "default"
+11/07/2025 18:51:55 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+11/07/2025 18:51:55 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 25 ms. Found 5 JPA repository interfaces.
+11/07/2025 18:51:55 [restartedMain] DEBUG o.s.a.a.a.ReflectiveAspectJAdvisorFactory - Found AspectJ method: public java.lang.Object com.lojatenis.config.DatabaseLogger.logDatabaseOperation(org.aspectj.lang.ProceedingJoinPoint) throws java.lang.Throwable
+11/07/2025 18:51:55 [restartedMain] DEBUG o.s.a.a.a.ReflectiveAspectJAdvisorFactory - Found AspectJ method: public java.lang.Object com.lojatenis.config.DatabaseLogger.logServiceOperation(org.aspectj.lang.ProceedingJoinPoint) throws java.lang.Throwable
+11/07/2025 18:51:55 [restartedMain] DEBUG o.s.a.a.a.ReflectiveAspectJAdvisorFactory - Found AspectJ method: public java.lang.Object com.lojatenis.config.LoggingAspect.logDatabaseOperation(org.aspectj.lang.ProceedingJoinPoint) throws java.lang.Throwable
+11/07/2025 18:51:55 [restartedMain] DEBUG o.s.a.a.a.ReflectiveAspectJAdvisorFactory - Found AspectJ method: public java.lang.Object com.lojatenis.config.LoggingAspect.logServiceOperation(org.aspectj.lang.ProceedingJoinPoint) throws java.lang.Throwable
+11/07/2025 18:51:55 [restartedMain] DEBUG o.s.a.a.a.ReflectiveAspectJAdvisorFactory - Found AspectJ method: public void org.springframework.beans.factory.aspectj.AbstractDependencyInjectionAspect.ajc$before$org_springframework_beans_factory_aspectj_AbstractDependencyInjectionAspect$1$e854fa65(java.lang.Object)
+11/07/2025 18:51:55 [restartedMain] DEBUG o.s.a.a.a.ReflectiveAspectJAdvisorFactory - Found AspectJ method: public void org.springframework.beans.factory.aspectj.AbstractDependencyInjectionAspect.ajc$afterReturning$org_springframework_beans_factory_aspectj_AbstractDependencyInjectionAspect$2$1ea6722c(java.lang.Object)
+11/07/2025 18:51:55 [restartedMain] DEBUG o.s.a.a.a.ReflectiveAspectJAdvisorFactory - Found AspectJ method: public void org.springframework.beans.factory.aspectj.AbstractDependencyInjectionAspect.ajc$afterReturning$org_springframework_beans_factory_aspectj_AbstractDependencyInjectionAspect$3$6aa27052(java.lang.Object)
+11/07/2025 18:51:55 [restartedMain] DEBUG o.s.a.a.AspectJExpressionPointcut - Pointcut parser rejected expression [(beanConstruction(bean) && (preConstructionCondition() && inConfigurableBean()))]: java.lang.IllegalArgumentException: Pointcut is not well-formed: expecting 'identifier' at character position 0
+
+^
+
+11/07/2025 18:51:55 [restartedMain] DEBUG o.s.a.a.AspectJExpressionPointcut - Pointcut parser rejected expression [(beanConstruction(bean) && (postConstructionCondition() && inConfigurableBean()))]: java.lang.IllegalArgumentException: Pointcut is not well-formed: expecting 'identifier' at character position 0
+
+^
+
+11/07/2025 18:51:55 [restartedMain] DEBUG o.s.a.a.AspectJExpressionPointcut - Pointcut parser rejected expression [(beanDeserialization(bean) && inConfigurableBean())]: java.lang.IllegalArgumentException: Pointcut is not well-formed: expecting 'identifier' at character position 0
+
+^
+
+11/07/2025 18:51:56 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+11/07/2025 18:51:56 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+11/07/2025 18:51:56 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.42]
+11/07/2025 18:51:56 [restartedMain] INFO  o.a.c.c.C.[.[localhost].[/api] - Initializing Spring embedded WebApplicationContext
+11/07/2025 18:51:56 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 822 ms
+11/07/2025 18:51:56 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+11/07/2025 18:51:56 [restartedMain] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+11/07/2025 18:51:56 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+11/07/2025 18:51:56 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Starting...
+11/07/2025 18:51:56 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-3 - Added connection org.postgresql.jdbc.PgConnection@7b621e46
+11/07/2025 18:51:56 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Start completed.
+11/07/2025 18:51:56 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+11/07/2025 18:51:56 [restartedMain] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-3)']
+	Database driver: undefined/unknown
+	Database version: 17.5
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+11/07/2025 18:51:56 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+11/07/2025 18:51:57 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+11/07/2025 18:51:57 [restartedMain] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+11/07/2025 18:52:00 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+11/07/2025 18:52:00 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/api'
+11/07/2025 18:52:00 [restartedMain] INFO  c.lojatenis.LojaTenisApiApplication - Started LojaTenisApiApplication in 5.118 seconds (process running for 87.864)
+11/07/2025 18:52:00 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+11/07/2025 18:52:10 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 2 class path changes (2 additions, 0 deletions, 0 modifications)
+11/07/2025 18:52:10 [Thread-11] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+11/07/2025 18:52:10 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+11/07/2025 18:52:10 [Thread-11] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+11/07/2025 18:52:10 [Thread-11] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Shutdown initiated...
+11/07/2025 18:52:10 [Thread-11] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Shutdown completed.
+11/07/2025 18:52:10 [restartedMain] INFO  c.lojatenis.LojaTenisApiApplication - Starting LojaTenisApiApplication using Java 21.0.6 with PID 9792 (C:\Users\Allef\IdeaProjects\loja-tenis-api\target\classes started by Allef in C:\Users\Allef\IdeaProjects\loja-tenis-api)
+11/07/2025 18:52:10 [restartedMain] INFO  c.lojatenis.LojaTenisApiApplication - No active profile set, falling back to 1 default profile: "default"
+11/07/2025 18:52:10 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+11/07/2025 18:52:10 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 17 ms. Found 5 JPA repository interfaces.
+11/07/2025 18:52:10 [restartedMain] DEBUG o.s.a.a.a.ReflectiveAspectJAdvisorFactory - Found AspectJ method: public java.lang.Object com.lojatenis.config.DatabaseLogger.logDatabaseOperation(org.aspectj.lang.ProceedingJoinPoint) throws java.lang.Throwable
+11/07/2025 18:52:10 [restartedMain] DEBUG o.s.a.a.a.ReflectiveAspectJAdvisorFactory - Found AspectJ method: public java.lang.Object com.lojatenis.config.DatabaseLogger.logServiceOperation(org.aspectj.lang.ProceedingJoinPoint) throws java.lang.Throwable
+11/07/2025 18:52:10 [restartedMain] DEBUG o.s.a.a.a.ReflectiveAspectJAdvisorFactory - Found AspectJ method: public java.lang.Object com.lojatenis.config.LoggingAspect.logDatabaseOperation(org.aspectj.lang.ProceedingJoinPoint) throws java.lang.Throwable
+11/07/2025 18:52:10 [restartedMain] DEBUG o.s.a.a.a.ReflectiveAspectJAdvisorFactory - Found AspectJ method: public java.lang.Object com.lojatenis.config.LoggingAspect.logServiceOperation(org.aspectj.lang.ProceedingJoinPoint) throws java.lang.Throwable
+11/07/2025 18:52:10 [restartedMain] DEBUG o.s.a.a.a.ReflectiveAspectJAdvisorFactory - Found AspectJ method: public void org.springframework.beans.factory.aspectj.AbstractDependencyInjectionAspect.ajc$before$org_springframework_beans_factory_aspectj_AbstractDependencyInjectionAspect$1$e854fa65(java.lang.Object)
+11/07/2025 18:52:10 [restartedMain] DEBUG o.s.a.a.a.ReflectiveAspectJAdvisorFactory - Found AspectJ method: public void org.springframework.beans.factory.aspectj.AbstractDependencyInjectionAspect.ajc$afterReturning$org_springframework_beans_factory_aspectj_AbstractDependencyInjectionAspect$2$1ea6722c(java.lang.Object)
+11/07/2025 18:52:10 [restartedMain] DEBUG o.s.a.a.a.ReflectiveAspectJAdvisorFactory - Found AspectJ method: public void org.springframework.beans.factory.aspectj.AbstractDependencyInjectionAspect.ajc$afterReturning$org_springframework_beans_factory_aspectj_AbstractDependencyInjectionAspect$3$6aa27052(java.lang.Object)
+11/07/2025 18:52:10 [restartedMain] DEBUG o.s.a.a.AspectJExpressionPointcut - Pointcut parser rejected expression [(beanConstruction(bean) && (preConstructionCondition() && inConfigurableBean()))]: java.lang.IllegalArgumentException: Pointcut is not well-formed: expecting 'identifier' at character position 0
+
+^
+
+11/07/2025 18:52:10 [restartedMain] DEBUG o.s.a.a.AspectJExpressionPointcut - Pointcut parser rejected expression [(beanConstruction(bean) && (postConstructionCondition() && inConfigurableBean()))]: java.lang.IllegalArgumentException: Pointcut is not well-formed: expecting 'identifier' at character position 0
+
+^
+
+11/07/2025 18:52:10 [restartedMain] DEBUG o.s.a.a.AspectJExpressionPointcut - Pointcut parser rejected expression [(beanDeserialization(bean) && inConfigurableBean())]: java.lang.IllegalArgumentException: Pointcut is not well-formed: expecting 'identifier' at character position 0
+
+^
+
+11/07/2025 18:52:10 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+11/07/2025 18:52:10 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+11/07/2025 18:52:10 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.42]
+11/07/2025 18:52:10 [restartedMain] INFO  o.a.c.c.C.[.[localhost].[/api] - Initializing Spring embedded WebApplicationContext
+11/07/2025 18:52:10 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 330 ms
+11/07/2025 18:52:10 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+11/07/2025 18:52:10 [restartedMain] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+11/07/2025 18:52:10 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+11/07/2025 18:52:10 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Starting...
+11/07/2025 18:52:10 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-4 - Added connection org.postgresql.jdbc.PgConnection@7997df7b
+11/07/2025 18:52:10 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Start completed.
+11/07/2025 18:52:10 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+11/07/2025 18:52:10 [restartedMain] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-4)']
+	Database driver: undefined/unknown
+	Database version: 17.5
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+11/07/2025 18:52:10 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+11/07/2025 18:52:11 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+11/07/2025 18:52:11 [restartedMain] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+11/07/2025 18:52:12 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+11/07/2025 18:52:12 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/api'
+11/07/2025 18:52:12 [restartedMain] INFO  c.lojatenis.LojaTenisApiApplication - Started LojaTenisApiApplication in 2.06 seconds (process running for 99.693)
+11/07/2025 18:52:12 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+11/07/2025 18:52:12 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+11/07/2025 18:52:12 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+11/07/2025 18:52:12 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+11/07/2025 18:52:12 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Shutdown initiated...
+11/07/2025 18:52:12 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Shutdown completed.
+11/07/2025 19:17:01 [restartedMain] INFO  c.lojatenis.LojaTenisApiApplication - Starting LojaTenisApiApplication using Java 21.0.6 with PID 16692 (C:\Users\Allef\IdeaProjects\loja-tenis-api\target\classes started by Allef in C:\Users\Allef\IdeaProjects\loja-tenis-api)
+11/07/2025 19:17:01 [restartedMain] INFO  c.lojatenis.LojaTenisApiApplication - No active profile set, falling back to 1 default profile: "default"
+11/07/2025 19:17:01 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+11/07/2025 19:17:01 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+11/07/2025 19:17:01 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+11/07/2025 19:17:02 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 47 ms. Found 5 JPA repository interfaces.
+11/07/2025 19:17:02 [restartedMain] DEBUG o.s.a.a.a.ReflectiveAspectJAdvisorFactory - Found AspectJ method: public java.lang.Object com.lojatenis.config.DatabaseLogger.logDatabaseOperation(org.aspectj.lang.ProceedingJoinPoint) throws java.lang.Throwable
+11/07/2025 19:17:02 [restartedMain] DEBUG o.s.a.a.a.ReflectiveAspectJAdvisorFactory - Found AspectJ method: public java.lang.Object com.lojatenis.config.DatabaseLogger.logServiceOperation(org.aspectj.lang.ProceedingJoinPoint) throws java.lang.Throwable
+11/07/2025 19:17:02 [restartedMain] DEBUG o.s.a.a.a.ReflectiveAspectJAdvisorFactory - Found AspectJ method: public java.lang.Object com.lojatenis.config.LoggingAspect.logDatabaseOperation(org.aspectj.lang.ProceedingJoinPoint) throws java.lang.Throwable
+11/07/2025 19:17:02 [restartedMain] DEBUG o.s.a.a.a.ReflectiveAspectJAdvisorFactory - Found AspectJ method: public java.lang.Object com.lojatenis.config.LoggingAspect.logServiceOperation(org.aspectj.lang.ProceedingJoinPoint) throws java.lang.Throwable
+11/07/2025 19:17:02 [restartedMain] DEBUG o.s.a.a.a.ReflectiveAspectJAdvisorFactory - Found AspectJ method: public void org.springframework.beans.factory.aspectj.AbstractDependencyInjectionAspect.ajc$before$org_springframework_beans_factory_aspectj_AbstractDependencyInjectionAspect$1$e854fa65(java.lang.Object)
+11/07/2025 19:17:02 [restartedMain] DEBUG o.s.a.a.a.ReflectiveAspectJAdvisorFactory - Found AspectJ method: public void org.springframework.beans.factory.aspectj.AbstractDependencyInjectionAspect.ajc$afterReturning$org_springframework_beans_factory_aspectj_AbstractDependencyInjectionAspect$2$1ea6722c(java.lang.Object)
+11/07/2025 19:17:02 [restartedMain] DEBUG o.s.a.a.a.ReflectiveAspectJAdvisorFactory - Found AspectJ method: public void org.springframework.beans.factory.aspectj.AbstractDependencyInjectionAspect.ajc$afterReturning$org_springframework_beans_factory_aspectj_AbstractDependencyInjectionAspect$3$6aa27052(java.lang.Object)
+11/07/2025 19:17:02 [restartedMain] DEBUG o.s.a.a.AspectJExpressionPointcut - Pointcut parser rejected expression [(beanConstruction(bean) && (preConstructionCondition() && inConfigurableBean()))]: java.lang.IllegalArgumentException: Pointcut is not well-formed: expecting 'identifier' at character position 0
+
+^
+
+11/07/2025 19:17:02 [restartedMain] DEBUG o.s.a.a.AspectJExpressionPointcut - Pointcut parser rejected expression [(beanConstruction(bean) && (postConstructionCondition() && inConfigurableBean()))]: java.lang.IllegalArgumentException: Pointcut is not well-formed: expecting 'identifier' at character position 0
+
+^
+
+11/07/2025 19:17:02 [restartedMain] DEBUG o.s.a.a.AspectJExpressionPointcut - Pointcut parser rejected expression [(beanDeserialization(bean) && inConfigurableBean())]: java.lang.IllegalArgumentException: Pointcut is not well-formed: expecting 'identifier' at character position 0
+
+^
+
+11/07/2025 19:17:03 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+11/07/2025 19:17:03 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+11/07/2025 19:17:03 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.42]
+11/07/2025 19:17:03 [restartedMain] INFO  o.a.c.c.C.[.[localhost].[/api] - Initializing Spring embedded WebApplicationContext
+11/07/2025 19:17:03 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1856 ms
+11/07/2025 19:17:03 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+11/07/2025 19:17:03 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.18.Final
+11/07/2025 19:17:03 [restartedMain] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+11/07/2025 19:17:03 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+11/07/2025 19:17:03 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+11/07/2025 19:17:03 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@17290bbc
+11/07/2025 19:17:03 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+11/07/2025 19:17:04 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+11/07/2025 19:17:04 [restartedMain] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 17.5
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+11/07/2025 19:17:05 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+11/07/2025 19:17:05 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+11/07/2025 19:17:05 [restartedMain] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+11/07/2025 19:17:06 [restartedMain] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+11/07/2025 19:17:08 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+11/07/2025 19:17:08 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/api'
+11/07/2025 19:17:08 [restartedMain] INFO  c.lojatenis.LojaTenisApiApplication - Started LojaTenisApiApplication in 7.698 seconds (process running for 8.556)
+11/07/2025 19:23:19 [http-nio-8080-exec-2] INFO  o.a.c.c.C.[.[localhost].[/api] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+11/07/2025 19:23:19 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+11/07/2025 19:23:19 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 16 ms
+11/07/2025 19:23:19 [http-nio-8080-exec-2] ERROR c.l.security.JwtRequestFilter - Erro ao extrair username do token JWT: JWT signature does not match locally computed signature. JWT validity cannot be asserted and should not be trusted.
+11/07/2025 19:23:19 [http-nio-8080-exec-2] ERROR c.l.s.JwtAuthenticationEntryPoint - Erro de autenticação: Full authentication is required to access this resource
+11/07/2025 19:24:06 [http-nio-8080-exec-1] INFO  c.l.controller.AuthController - Tentativa de login para email: admin@lojatenis.com
+11/07/2025 19:24:06 [http-nio-8080-exec-1] INFO  com.lojatenis.config.DatabaseLogger - 🔍 [DATABASE] 11/07/2025 19:24:06 | Executando: $Proxy158.findActiveByEmail | Argumentos: ["admin@lojatenis.com"]
+11/07/2025 19:24:06 [http-nio-8080-exec-1] INFO  com.lojatenis.config.LoggingAspect - 🔍 Executando operação de banco: $Proxy158.findActiveByEmail com argumentos: [admin@lojatenis.com]
+11/07/2025 19:24:06 [http-nio-8080-exec-1] DEBUG org.hibernate.SQL - 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.deleted,
+        u1_0.email,
+        u1_0.endereco_id,
+        u1_0.nome,
+        u1_0.role,
+        u1_0.senha,
+        u1_0.telefone,
+        u1_0.updated_at 
+    from
+        usuarios u1_0 
+    where
+        u1_0.deleted=false 
+        and u1_0.email=?
+11/07/2025 19:24:06 [http-nio-8080-exec-1] INFO  com.lojatenis.config.LoggingAspect - ✅ Operação $Proxy158.findActiveByEmail concluída em 228ms
+11/07/2025 19:24:06 [http-nio-8080-exec-1] INFO  com.lojatenis.config.DatabaseLogger - ✅ [DATABASE] 11/07/2025 19:24:06 | Sucesso: $Proxy158.findActiveByEmail | Tempo: 229ms | Resultado: Optional[com.lojatenis.domain.Usuario@4503ff56]
+11/07/2025 19:24:06 [http-nio-8080-exec-1] INFO  c.l.controller.AuthController - Login realizado com sucesso para: admin@lojatenis.com
+11/07/2025 19:24:28 [http-nio-8080-exec-3] INFO  com.lojatenis.config.DatabaseLogger - 🔍 [DATABASE] 11/07/2025 19:24:28 | Executando: $Proxy158.findActiveByEmail | Argumentos: ["admin@lojatenis.com"]
+11/07/2025 19:24:28 [http-nio-8080-exec-3] INFO  com.lojatenis.config.LoggingAspect - 🔍 Executando operação de banco: $Proxy158.findActiveByEmail com argumentos: [admin@lojatenis.com]
+11/07/2025 19:24:28 [http-nio-8080-exec-3] DEBUG org.hibernate.SQL - 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.deleted,
+        u1_0.email,
+        u1_0.endereco_id,
+        u1_0.nome,
+        u1_0.role,
+        u1_0.senha,
+        u1_0.telefone,
+        u1_0.updated_at 
+    from
+        usuarios u1_0 
+    where
+        u1_0.deleted=false 
+        and u1_0.email=?
+11/07/2025 19:24:28 [http-nio-8080-exec-3] INFO  com.lojatenis.config.LoggingAspect - ✅ Operação $Proxy158.findActiveByEmail concluída em 12ms
+11/07/2025 19:24:28 [http-nio-8080-exec-3] INFO  com.lojatenis.config.DatabaseLogger - ✅ [DATABASE] 11/07/2025 19:24:28 | Sucesso: $Proxy158.findActiveByEmail | Tempo: 13ms | Resultado: Optional[com.lojatenis.domain.Usuario@205750a9]
+11/07/2025 19:24:28 [http-nio-8080-exec-3] INFO  com.lojatenis.service.PedidoService - Criando novo pedido para usuário ID: 1
+11/07/2025 19:24:28 [http-nio-8080-exec-3] INFO  com.lojatenis.config.DatabaseLogger - 🔍 [DATABASE] 11/07/2025 19:24:28 | Executando: $Proxy158.findActiveById | Argumentos: [1]
+11/07/2025 19:24:28 [http-nio-8080-exec-3] INFO  com.lojatenis.config.LoggingAspect - 🔍 Executando operação de banco: $Proxy158.findActiveById com argumentos: [1]
+11/07/2025 19:24:28 [http-nio-8080-exec-3] DEBUG org.hibernate.SQL - 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.deleted,
+        u1_0.email,
+        u1_0.endereco_id,
+        u1_0.nome,
+        u1_0.role,
+        u1_0.senha,
+        u1_0.telefone,
+        u1_0.updated_at 
+    from
+        usuarios u1_0 
+    where
+        u1_0.deleted=false 
+        and u1_0.id=?
+11/07/2025 19:24:28 [http-nio-8080-exec-3] INFO  com.lojatenis.config.LoggingAspect - ✅ Operação $Proxy158.findActiveById concluída em 9ms
+11/07/2025 19:24:28 [http-nio-8080-exec-3] INFO  com.lojatenis.config.DatabaseLogger - ✅ [DATABASE] 11/07/2025 19:24:28 | Sucesso: $Proxy158.findActiveById | Tempo: 9ms | Resultado: Optional[com.lojatenis.domain.Usuario@4b25740]
+11/07/2025 19:24:28 [http-nio-8080-exec-3] INFO  com.lojatenis.config.DatabaseLogger - 🔍 [DATABASE] 11/07/2025 19:24:28 | Executando: $Proxy168.findActiveById | Argumentos: [1]
+11/07/2025 19:24:28 [http-nio-8080-exec-3] INFO  com.lojatenis.config.LoggingAspect - 🔍 Executando operação de banco: $Proxy168.findActiveById com argumentos: [1]
+11/07/2025 19:24:28 [http-nio-8080-exec-3] DEBUG org.hibernate.SQL - 
+    select
+        t1_0.id,
+        t1_0.cor,
+        t1_0.created_at,
+        t1_0.deleted,
+        t1_0.descricao,
+        t1_0.marca,
+        t1_0.material,
+        t1_0.modelo,
+        t1_0.nome,
+        t1_0.preco,
+        t1_0.updated_at 
+    from
+        tenis t1_0 
+    where
+        t1_0.deleted=false 
+        and t1_0.id=?
+11/07/2025 19:24:28 [http-nio-8080-exec-3] INFO  com.lojatenis.config.LoggingAspect - ✅ Operação $Proxy168.findActiveById concluída em 22ms
+11/07/2025 19:24:28 [http-nio-8080-exec-3] INFO  com.lojatenis.config.DatabaseLogger - ✅ [DATABASE] 11/07/2025 19:24:28 | Sucesso: $Proxy168.findActiveById | Tempo: 22ms | Resultado: Optional[com.lojatenis.domain.Tenis@48d5f635]
+11/07/2025 19:24:28 [http-nio-8080-exec-3] INFO  com.lojatenis.config.DatabaseLogger - 🔍 [DATABASE] 11/07/2025 19:24:28 | Executando: $Proxy168.findActiveById | Argumentos: [2]
+11/07/2025 19:24:28 [http-nio-8080-exec-3] INFO  com.lojatenis.config.LoggingAspect - 🔍 Executando operação de banco: $Proxy168.findActiveById com argumentos: [2]
+11/07/2025 19:24:28 [http-nio-8080-exec-3] DEBUG org.hibernate.SQL - 
+    select
+        t1_0.id,
+        t1_0.cor,
+        t1_0.created_at,
+        t1_0.deleted,
+        t1_0.descricao,
+        t1_0.marca,
+        t1_0.material,
+        t1_0.modelo,
+        t1_0.nome,
+        t1_0.preco,
+        t1_0.updated_at 
+    from
+        tenis t1_0 
+    where
+        t1_0.deleted=false 
+        and t1_0.id=?
+11/07/2025 19:24:28 [http-nio-8080-exec-3] INFO  com.lojatenis.config.LoggingAspect - ✅ Operação $Proxy168.findActiveById concluída em 2ms
+11/07/2025 19:24:28 [http-nio-8080-exec-3] INFO  com.lojatenis.config.DatabaseLogger - ✅ [DATABASE] 11/07/2025 19:24:28 | Sucesso: $Proxy168.findActiveById | Tempo: 2ms | Resultado: Optional[com.lojatenis.domain.Tenis@1bf25d80]
+11/07/2025 19:24:28 [http-nio-8080-exec-3] INFO  com.lojatenis.config.DatabaseLogger - 🔍 [DATABASE] 11/07/2025 19:24:28 | Executando: $Proxy167.save | Argumentos: [Pedido@671157803]
+11/07/2025 19:24:28 [http-nio-8080-exec-3] INFO  com.lojatenis.config.LoggingAspect - 🔍 Executando operação de banco: $Proxy167.save com argumentos: [com.lojatenis.domain.Pedido@28010e2b]
+11/07/2025 19:24:28 [http-nio-8080-exec-3] DEBUG org.hibernate.SQL - 
+    insert 
+    into
+        pedidos
+        (created_at, data_pedido, deleted, status, updated_at, usuario_id, valor_total) 
+    values
+        (?, ?, ?, ?, ?, ?, ?)
+11/07/2025 19:24:28 [http-nio-8080-exec-3] DEBUG org.hibernate.SQL - 
+    insert 
+    into
+        itens_pedido
+        (created_at, deleted, pedido_id, preco_unitario, quantidade, tamanho, tenis_id, updated_at) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?)
+11/07/2025 19:24:28 [http-nio-8080-exec-3] DEBUG org.hibernate.SQL - 
+    insert 
+    into
+        itens_pedido
+        (created_at, deleted, pedido_id, preco_unitario, quantidade, tamanho, tenis_id, updated_at) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?)
+11/07/2025 19:24:28 [http-nio-8080-exec-3] INFO  com.lojatenis.config.LoggingAspect - ✅ Operação $Proxy167.save concluída em 95ms
+11/07/2025 19:24:28 [http-nio-8080-exec-3] INFO  com.lojatenis.config.DatabaseLogger - ✅ [DATABASE] 11/07/2025 19:24:28 | Sucesso: $Proxy167.save | Tempo: 95ms | Resultado: Pedido@671157803
+11/07/2025 19:24:28 [http-nio-8080-exec-3] INFO  com.lojatenis.service.PedidoService - Pedido criado com sucesso - ID: 1 | Valor Total: 999.97 | Itens: 2
+11/07/2025 19:28:18 [http-nio-8080-exec-5] INFO  com.lojatenis.config.DatabaseLogger - 🔍 [DATABASE] 11/07/2025 19:28:18 | Executando: $Proxy158.findActiveByEmail | Argumentos: ["admin@lojatenis.com"]
+11/07/2025 19:28:18 [http-nio-8080-exec-5] INFO  com.lojatenis.config.LoggingAspect - 🔍 Executando operação de banco: $Proxy158.findActiveByEmail com argumentos: [admin@lojatenis.com]
+11/07/2025 19:28:18 [http-nio-8080-exec-5] DEBUG org.hibernate.SQL - 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.deleted,
+        u1_0.email,
+        u1_0.endereco_id,
+        u1_0.nome,
+        u1_0.role,
+        u1_0.senha,
+        u1_0.telefone,
+        u1_0.updated_at 
+    from
+        usuarios u1_0 
+    where
+        u1_0.deleted=false 
+        and u1_0.email=?
+11/07/2025 19:28:18 [http-nio-8080-exec-5] INFO  com.lojatenis.config.LoggingAspect - ✅ Operação $Proxy158.findActiveByEmail concluída em 21ms
+11/07/2025 19:28:18 [http-nio-8080-exec-5] INFO  com.lojatenis.config.DatabaseLogger - ✅ [DATABASE] 11/07/2025 19:28:18 | Sucesso: $Proxy158.findActiveByEmail | Tempo: 21ms | Resultado: Optional[com.lojatenis.domain.Usuario@776c5cd4]
+11/07/2025 19:28:18 [http-nio-8080-exec-5] ERROR c.l.exception.GlobalExceptionHandler - Erro interno do servidor: Method parameter 'status': Failed to convert value of type 'java.lang.String' to required type 'com.lojatenis.domain.enums.StatusPedido'; Failed to convert from type [java.lang.String] to type [@org.springframework.web.bind.annotation.RequestParam com.lojatenis.domain.enums.StatusPedido] for value [PAGO]
+org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Method parameter 'status': Failed to convert value of type 'java.lang.String' to required type 'com.lojatenis.domain.enums.StatusPedido'; Failed to convert from type [java.lang.String] to type [@org.springframework.web.bind.annotation.RequestParam com.lojatenis.domain.enums.StatusPedido] for value [PAGO]
+	at org.springframework.web.method.annotation.AbstractNamedValueMethodArgumentResolver.convertIfNecessary(AbstractNamedValueMethodArgumentResolver.java:301)
+	at org.springframework.web.method.annotation.AbstractNamedValueMethodArgumentResolver.resolveArgument(AbstractNamedValueMethodArgumentResolver.java:136)
+	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:122)
+	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:227)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:181)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:986)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:891)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:888)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:110)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108)
+	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:231)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:365)
+	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:101)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:125)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:131)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:85)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:179)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at com.lojatenis.security.JwtRequestFilter.doFilterInternal(JwtRequestFilter.java:62)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.ServletRequestPathFilter.doFilter(ServletRequestPathFilter.java:52)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74)
+	at org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebSecurityConfiguration.java:319)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$4(HandlerMappingIntrospector.java:267)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74)
+	at org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:240)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:362)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:278)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:116)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:398)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1769)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1189)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:658)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: org.springframework.core.convert.ConversionFailedException: Failed to convert from type [java.lang.String] to type [@org.springframework.web.bind.annotation.RequestParam com.lojatenis.domain.enums.StatusPedido] for value [PAGO]
+	at org.springframework.core.convert.support.ConversionUtils.invokeConverter(ConversionUtils.java:47)
+	at org.springframework.core.convert.support.GenericConversionService.convert(GenericConversionService.java:182)
+	at org.springframework.beans.TypeConverterDelegate.convertIfNecessary(TypeConverterDelegate.java:131)
+	at org.springframework.beans.TypeConverterSupport.convertIfNecessary(TypeConverterSupport.java:80)
+	at org.springframework.beans.TypeConverterSupport.convertIfNecessary(TypeConverterSupport.java:53)
+	at org.springframework.validation.DataBinder.convertIfNecessary(DataBinder.java:867)
+	at org.springframework.web.method.annotation.AbstractNamedValueMethodArgumentResolver.convertIfNecessary(AbstractNamedValueMethodArgumentResolver.java:293)
+	... 106 common frames omitted
+Caused by: java.lang.IllegalArgumentException: No enum constant com.lojatenis.domain.enums.StatusPedido.PAGO
+	at java.base/java.lang.Enum.valueOf(Enum.java:293)
+	at org.springframework.core.convert.support.StringToEnumConverterFactory$StringToEnum.convert(StringToEnumConverterFactory.java:54)
+	at org.springframework.core.convert.support.StringToEnumConverterFactory$StringToEnum.convert(StringToEnumConverterFactory.java:39)
+	at org.springframework.core.convert.support.GenericConversionService$ConverterFactoryAdapter.convert(GenericConversionService.java:415)
+	at org.springframework.core.convert.support.ConversionUtils.invokeConverter(ConversionUtils.java:41)
+	... 112 common frames omitted
+11/07/2025 19:28:18 [http-nio-8080-exec-5] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Method parameter 'status': Failed to convert value of type 'java.lang.String' to required type 'com.lojatenis.domain.enums.StatusPedido'; Failed to convert from type [java.lang.String] to type [@org.springframework.web.bind.annotation.RequestParam com.lojatenis.domain.enums.StatusPedido] for value [PAGO]]
+11/07/2025 19:31:27 [http-nio-8080-exec-6] INFO  com.lojatenis.config.DatabaseLogger - 🔍 [DATABASE] 11/07/2025 19:31:27 | Executando: $Proxy158.findActiveByEmail | Argumentos: ["admin@lojatenis.com"]
+11/07/2025 19:31:27 [http-nio-8080-exec-6] INFO  com.lojatenis.config.LoggingAspect - 🔍 Executando operação de banco: $Proxy158.findActiveByEmail com argumentos: [admin@lojatenis.com]
+11/07/2025 19:31:27 [http-nio-8080-exec-6] DEBUG org.hibernate.SQL - 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.deleted,
+        u1_0.email,
+        u1_0.endereco_id,
+        u1_0.nome,
+        u1_0.role,
+        u1_0.senha,
+        u1_0.telefone,
+        u1_0.updated_at 
+    from
+        usuarios u1_0 
+    where
+        u1_0.deleted=false 
+        and u1_0.email=?
+11/07/2025 19:31:27 [http-nio-8080-exec-6] INFO  com.lojatenis.config.LoggingAspect - ✅ Operação $Proxy158.findActiveByEmail concluída em 27ms
+11/07/2025 19:31:27 [http-nio-8080-exec-6] INFO  com.lojatenis.config.DatabaseLogger - ✅ [DATABASE] 11/07/2025 19:31:27 | Sucesso: $Proxy158.findActiveByEmail | Tempo: 27ms | Resultado: Optional[com.lojatenis.domain.Usuario@6d0b4ec3]
+11/07/2025 19:31:27 [http-nio-8080-exec-6] INFO  com.lojatenis.service.PedidoService - Atualizando status do pedido ID: 1 para CONFIRMADO
+11/07/2025 19:31:27 [http-nio-8080-exec-6] INFO  com.lojatenis.config.DatabaseLogger - 🔍 [DATABASE] 11/07/2025 19:31:27 | Executando: $Proxy167.findActiveById | Argumentos: [1]
+11/07/2025 19:31:27 [http-nio-8080-exec-6] INFO  com.lojatenis.config.LoggingAspect - 🔍 Executando operação de banco: $Proxy167.findActiveById com argumentos: [1]
+11/07/2025 19:31:27 [http-nio-8080-exec-6] DEBUG org.hibernate.SQL - 
+    select
+        p1_0.id,
+        p1_0.created_at,
+        p1_0.data_pedido,
+        p1_0.deleted,
+        p1_0.status,
+        p1_0.updated_at,
+        p1_0.usuario_id,
+        p1_0.valor_total 
+    from
+        pedidos p1_0 
+    where
+        p1_0.deleted=false 
+        and p1_0.id=?
+11/07/2025 19:31:27 [http-nio-8080-exec-6] INFO  com.lojatenis.config.LoggingAspect - ✅ Operação $Proxy167.findActiveById concluída em 48ms
+11/07/2025 19:31:27 [http-nio-8080-exec-6] INFO  com.lojatenis.config.DatabaseLogger - ✅ [DATABASE] 11/07/2025 19:31:27 | Sucesso: $Proxy167.findActiveById | Tempo: 48ms | Resultado: Optional[com.lojatenis.domain.Pedido@1046c63b]
+11/07/2025 19:31:27 [http-nio-8080-exec-6] INFO  com.lojatenis.config.DatabaseLogger - 🔍 [DATABASE] 11/07/2025 19:31:27 | Executando: $Proxy167.save | Argumentos: [Pedido@273073723]
+11/07/2025 19:31:27 [http-nio-8080-exec-6] INFO  com.lojatenis.config.LoggingAspect - 🔍 Executando operação de banco: $Proxy167.save com argumentos: [com.lojatenis.domain.Pedido@1046c63b]
+11/07/2025 19:31:27 [http-nio-8080-exec-6] INFO  com.lojatenis.config.LoggingAspect - ✅ Operação $Proxy167.save concluída em 7ms
+11/07/2025 19:31:27 [http-nio-8080-exec-6] INFO  com.lojatenis.config.DatabaseLogger - ✅ [DATABASE] 11/07/2025 19:31:27 | Sucesso: $Proxy167.save | Tempo: 8ms | Resultado: Pedido@273073723
+11/07/2025 19:31:27 [http-nio-8080-exec-6] INFO  com.lojatenis.service.PedidoService - Status do pedido ID: 1 atualizado para CONFIRMADO
+11/07/2025 19:31:27 [http-nio-8080-exec-6] DEBUG org.hibernate.SQL - 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.deleted,
+        u1_0.email,
+        u1_0.endereco_id,
+        u1_0.nome,
+        u1_0.role,
+        u1_0.senha,
+        u1_0.telefone,
+        u1_0.updated_at 
+    from
+        usuarios u1_0 
+    where
+        u1_0.id=?
+11/07/2025 19:31:27 [http-nio-8080-exec-6] DEBUG org.hibernate.SQL - 
+    select
+        i1_0.pedido_id,
+        i1_0.id,
+        i1_0.created_at,
+        i1_0.deleted,
+        i1_0.preco_unitario,
+        i1_0.quantidade,
+        i1_0.tamanho,
+        i1_0.tenis_id,
+        i1_0.updated_at 
+    from
+        itens_pedido i1_0 
+    where
+        i1_0.pedido_id=?
+11/07/2025 19:31:27 [http-nio-8080-exec-6] DEBUG org.hibernate.SQL - 
+    select
+        t1_0.id,
+        t1_0.cor,
+        t1_0.created_at,
+        t1_0.deleted,
+        t1_0.descricao,
+        t1_0.marca,
+        t1_0.material,
+        t1_0.modelo,
+        t1_0.nome,
+        t1_0.preco,
+        t1_0.updated_at 
+    from
+        tenis t1_0 
+    where
+        t1_0.id=?
+11/07/2025 19:31:27 [http-nio-8080-exec-6] DEBUG org.hibernate.SQL - 
+    select
+        t1_0.id,
+        t1_0.cor,
+        t1_0.created_at,
+        t1_0.deleted,
+        t1_0.descricao,
+        t1_0.marca,
+        t1_0.material,
+        t1_0.modelo,
+        t1_0.nome,
+        t1_0.preco,
+        t1_0.updated_at 
+    from
+        tenis t1_0 
+    where
+        t1_0.id=?
+11/07/2025 19:31:27 [http-nio-8080-exec-6] DEBUG org.hibernate.SQL - 
+    update
+        pedidos 
+    set
+        data_pedido=?,
+        deleted=?,
+        status=?,
+        updated_at=?,
+        usuario_id=?,
+        valor_total=? 
+    where
+        id=?
+11/07/2025 19:34:12 [http-nio-8080-exec-4] INFO  com.lojatenis.config.DatabaseLogger - 🔍 [DATABASE] 11/07/2025 19:34:12 | Executando: $Proxy158.findActiveByEmail | Argumentos: ["admin@lojatenis.com"]
+11/07/2025 19:34:12 [http-nio-8080-exec-4] INFO  com.lojatenis.config.LoggingAspect - 🔍 Executando operação de banco: $Proxy158.findActiveByEmail com argumentos: [admin@lojatenis.com]
+11/07/2025 19:34:12 [http-nio-8080-exec-4] DEBUG org.hibernate.SQL - 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.deleted,
+        u1_0.email,
+        u1_0.endereco_id,
+        u1_0.nome,
+        u1_0.role,
+        u1_0.senha,
+        u1_0.telefone,
+        u1_0.updated_at 
+    from
+        usuarios u1_0 
+    where
+        u1_0.deleted=false 
+        and u1_0.email=?
+11/07/2025 19:34:12 [http-nio-8080-exec-4] INFO  com.lojatenis.config.LoggingAspect - ✅ Operação $Proxy158.findActiveByEmail concluída em 25ms
+11/07/2025 19:34:12 [http-nio-8080-exec-4] INFO  com.lojatenis.config.DatabaseLogger - ✅ [DATABASE] 11/07/2025 19:34:12 | Sucesso: $Proxy158.findActiveByEmail | Tempo: 25ms | Resultado: Optional[com.lojatenis.domain.Usuario@3c252252]
+11/07/2025 19:34:12 [http-nio-8080-exec-4] INFO  com.lojatenis.service.PedidoService - Buscando todos os pedidos ativos - Página: 0, Tamanho: 10
+11/07/2025 19:34:12 [http-nio-8080-exec-4] INFO  com.lojatenis.config.DatabaseLogger - 🔍 [DATABASE] 11/07/2025 19:34:12 | Executando: $Proxy167.findAllActive | Argumentos: [Page request [number: 0, size 10, sort: dataPedido: DESC]]
+11/07/2025 19:34:12 [http-nio-8080-exec-4] INFO  com.lojatenis.config.LoggingAspect - 🔍 Executando operação de banco: $Proxy167.findAllActive com argumentos: [Page request [number: 0, size 10, sort: dataPedido: DESC]]
+11/07/2025 19:34:12 [http-nio-8080-exec-4] DEBUG org.hibernate.SQL - 
+    select
+        p1_0.id,
+        p1_0.created_at,
+        p1_0.data_pedido,
+        p1_0.deleted,
+        p1_0.status,
+        p1_0.updated_at,
+        p1_0.usuario_id,
+        p1_0.valor_total 
+    from
+        pedidos p1_0 
+    where
+        p1_0.deleted=false 
+    order by
+        p1_0.data_pedido desc 
+    fetch
+        first ? rows only
+11/07/2025 19:34:12 [http-nio-8080-exec-4] INFO  com.lojatenis.config.LoggingAspect - ✅ Operação $Proxy167.findAllActive concluída em 57ms
+11/07/2025 19:34:12 [http-nio-8080-exec-4] INFO  com.lojatenis.config.DatabaseLogger - ✅ [DATABASE] 11/07/2025 19:34:12 | Sucesso: $Proxy167.findAllActive | Tempo: 58ms | Resultado: Page[1 items, 1 total]
+11/07/2025 19:34:12 [http-nio-8080-exec-4] DEBUG org.hibernate.SQL - 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.deleted,
+        u1_0.email,
+        u1_0.endereco_id,
+        u1_0.nome,
+        u1_0.role,
+        u1_0.senha,
+        u1_0.telefone,
+        u1_0.updated_at 
+    from
+        usuarios u1_0 
+    where
+        u1_0.id=?
+11/07/2025 19:34:12 [http-nio-8080-exec-4] DEBUG org.hibernate.SQL - 
+    select
+        i1_0.pedido_id,
+        i1_0.id,
+        i1_0.created_at,
+        i1_0.deleted,
+        i1_0.preco_unitario,
+        i1_0.quantidade,
+        i1_0.tamanho,
+        i1_0.tenis_id,
+        i1_0.updated_at 
+    from
+        itens_pedido i1_0 
+    where
+        i1_0.pedido_id=?
+11/07/2025 19:34:12 [http-nio-8080-exec-4] DEBUG org.hibernate.SQL - 
+    select
+        t1_0.id,
+        t1_0.cor,
+        t1_0.created_at,
+        t1_0.deleted,
+        t1_0.descricao,
+        t1_0.marca,
+        t1_0.material,
+        t1_0.modelo,
+        t1_0.nome,
+        t1_0.preco,
+        t1_0.updated_at 
+    from
+        tenis t1_0 
+    where
+        t1_0.id=?
+11/07/2025 19:34:12 [http-nio-8080-exec-4] DEBUG org.hibernate.SQL - 
+    select
+        t1_0.id,
+        t1_0.cor,
+        t1_0.created_at,
+        t1_0.deleted,
+        t1_0.descricao,
+        t1_0.marca,
+        t1_0.material,
+        t1_0.modelo,
+        t1_0.nome,
+        t1_0.preco,
+        t1_0.updated_at 
+    from
+        tenis t1_0 
+    where
+        t1_0.id=?
+11/07/2025 19:39:37 [http-nio-8080-exec-10] INFO  com.lojatenis.config.DatabaseLogger - 🔍 [DATABASE] 11/07/2025 19:39:37 | Executando: $Proxy158.findActiveByEmail | Argumentos: ["admin@lojatenis.com"]
+11/07/2025 19:39:37 [http-nio-8080-exec-10] INFO  com.lojatenis.config.LoggingAspect - 🔍 Executando operação de banco: $Proxy158.findActiveByEmail com argumentos: [admin@lojatenis.com]
+11/07/2025 19:39:37 [http-nio-8080-exec-10] DEBUG org.hibernate.SQL - 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.deleted,
+        u1_0.email,
+        u1_0.endereco_id,
+        u1_0.nome,
+        u1_0.role,
+        u1_0.senha,
+        u1_0.telefone,
+        u1_0.updated_at 
+    from
+        usuarios u1_0 
+    where
+        u1_0.deleted=false 
+        and u1_0.email=?
+11/07/2025 19:39:37 [http-nio-8080-exec-10] INFO  com.lojatenis.config.LoggingAspect - ✅ Operação $Proxy158.findActiveByEmail concluída em 26ms
+11/07/2025 19:39:37 [http-nio-8080-exec-10] INFO  com.lojatenis.config.DatabaseLogger - ✅ [DATABASE] 11/07/2025 19:39:37 | Sucesso: $Proxy158.findActiveByEmail | Tempo: 27ms | Resultado: Optional[com.lojatenis.domain.Usuario@21b6b929]
+11/07/2025 19:39:37 [http-nio-8080-exec-10] INFO  com.lojatenis.service.PedidoService - Buscando pedidos do usuário ID: 1
+11/07/2025 19:39:37 [http-nio-8080-exec-10] INFO  com.lojatenis.config.DatabaseLogger - 🔍 [DATABASE] 11/07/2025 19:39:37 | Executando: $Proxy158.existsActiveById | Argumentos: [1]
+11/07/2025 19:39:37 [http-nio-8080-exec-10] INFO  com.lojatenis.config.LoggingAspect - 🔍 Executando operação de banco: $Proxy158.existsActiveById com argumentos: [1]
+11/07/2025 19:39:37 [http-nio-8080-exec-10] DEBUG org.hibernate.SQL - 
+    select
+        case 
+            when count(u1_0.id)>0 
+                then true 
+            else false 
+    end 
+from
+    usuarios u1_0 
+where
+    u1_0.deleted=false 
+    and u1_0.id=?
+11/07/2025 19:39:37 [http-nio-8080-exec-10] INFO  com.lojatenis.config.LoggingAspect - ✅ Operação $Proxy158.existsActiveById concluída em 64ms
+11/07/2025 19:39:37 [http-nio-8080-exec-10] INFO  com.lojatenis.config.DatabaseLogger - ✅ [DATABASE] 11/07/2025 19:39:37 | Sucesso: $Proxy158.existsActiveById | Tempo: 64ms | Resultado: true
+11/07/2025 19:39:37 [http-nio-8080-exec-10] INFO  com.lojatenis.config.DatabaseLogger - 🔍 [DATABASE] 11/07/2025 19:39:37 | Executando: $Proxy167.findActiveByUsuarioId | Argumentos: [1, Page request [number: 0, size 10, sort: dataPedido: DESC]]
+11/07/2025 19:39:37 [http-nio-8080-exec-10] INFO  com.lojatenis.config.LoggingAspect - 🔍 Executando operação de banco: $Proxy167.findActiveByUsuarioId com argumentos: [1, Page request [number: 0, size 10, sort: dataPedido: DESC]]
+11/07/2025 19:39:37 [http-nio-8080-exec-10] DEBUG org.hibernate.SQL - 
+    select
+        p1_0.id,
+        p1_0.created_at,
+        p1_0.data_pedido,
+        p1_0.deleted,
+        p1_0.status,
+        p1_0.updated_at,
+        p1_0.usuario_id,
+        p1_0.valor_total 
+    from
+        pedidos p1_0 
+    where
+        p1_0.deleted=false 
+        and p1_0.usuario_id=? 
+    order by
+        p1_0.data_pedido desc 
+    fetch
+        first ? rows only
+11/07/2025 19:39:37 [http-nio-8080-exec-10] INFO  com.lojatenis.config.LoggingAspect - ✅ Operação $Proxy167.findActiveByUsuarioId concluída em 11ms
+11/07/2025 19:39:37 [http-nio-8080-exec-10] INFO  com.lojatenis.config.DatabaseLogger - ✅ [DATABASE] 11/07/2025 19:39:37 | Sucesso: $Proxy167.findActiveByUsuarioId | Tempo: 11ms | Resultado: Page[1 items, 1 total]
+11/07/2025 19:39:37 [http-nio-8080-exec-10] DEBUG org.hibernate.SQL - 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.deleted,
+        u1_0.email,
+        u1_0.endereco_id,
+        u1_0.nome,
+        u1_0.role,
+        u1_0.senha,
+        u1_0.telefone,
+        u1_0.updated_at 
+    from
+        usuarios u1_0 
+    where
+        u1_0.id=?
+11/07/2025 19:39:37 [http-nio-8080-exec-10] DEBUG org.hibernate.SQL - 
+    select
+        i1_0.pedido_id,
+        i1_0.id,
+        i1_0.created_at,
+        i1_0.deleted,
+        i1_0.preco_unitario,
+        i1_0.quantidade,
+        i1_0.tamanho,
+        i1_0.tenis_id,
+        i1_0.updated_at 
+    from
+        itens_pedido i1_0 
+    where
+        i1_0.pedido_id=?
+11/07/2025 19:39:37 [http-nio-8080-exec-10] DEBUG org.hibernate.SQL - 
+    select
+        t1_0.id,
+        t1_0.cor,
+        t1_0.created_at,
+        t1_0.deleted,
+        t1_0.descricao,
+        t1_0.marca,
+        t1_0.material,
+        t1_0.modelo,
+        t1_0.nome,
+        t1_0.preco,
+        t1_0.updated_at 
+    from
+        tenis t1_0 
+    where
+        t1_0.id=?
+11/07/2025 19:39:37 [http-nio-8080-exec-10] DEBUG org.hibernate.SQL - 
+    select
+        t1_0.id,
+        t1_0.cor,
+        t1_0.created_at,
+        t1_0.deleted,
+        t1_0.descricao,
+        t1_0.marca,
+        t1_0.material,
+        t1_0.modelo,
+        t1_0.nome,
+        t1_0.preco,
+        t1_0.updated_at 
+    from
+        tenis t1_0 
+    where
+        t1_0.id=?
+11/07/2025 19:45:04 [http-nio-8080-exec-1] INFO  com.lojatenis.config.DatabaseLogger - 🔍 [DATABASE] 11/07/2025 19:45:04 | Executando: $Proxy158.findActiveByEmail | Argumentos: ["admin@lojatenis.com"]
+11/07/2025 19:45:04 [http-nio-8080-exec-1] INFO  com.lojatenis.config.LoggingAspect - 🔍 Executando operação de banco: $Proxy158.findActiveByEmail com argumentos: [admin@lojatenis.com]
+11/07/2025 19:45:05 [http-nio-8080-exec-1] DEBUG org.hibernate.SQL - 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.deleted,
+        u1_0.email,
+        u1_0.endereco_id,
+        u1_0.nome,
+        u1_0.role,
+        u1_0.senha,
+        u1_0.telefone,
+        u1_0.updated_at 
+    from
+        usuarios u1_0 
+    where
+        u1_0.deleted=false 
+        and u1_0.email=?
+11/07/2025 19:45:05 [http-nio-8080-exec-1] INFO  com.lojatenis.config.LoggingAspect - ✅ Operação $Proxy158.findActiveByEmail concluída em 25ms
+11/07/2025 19:45:05 [http-nio-8080-exec-1] INFO  com.lojatenis.config.DatabaseLogger - ✅ [DATABASE] 11/07/2025 19:45:04 | Sucesso: $Proxy158.findActiveByEmail | Tempo: 25ms | Resultado: Optional[com.lojatenis.domain.Usuario@79320124]
+11/07/2025 19:45:05 [http-nio-8080-exec-1] ERROR c.l.exception.GlobalExceptionHandler - Erro interno do servidor: No static resource usuarios.
+org.springframework.web.servlet.resource.NoResourceFoundException: No static resource usuarios.
+	at org.springframework.web.servlet.resource.ResourceHttpRequestHandler.handleRequest(ResourceHttpRequestHandler.java:585)
+	at org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter.handle(HttpRequestHandlerAdapter.java:52)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:110)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108)
+	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:231)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:365)
+	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:101)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:125)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:131)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:85)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:179)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at com.lojatenis.security.JwtRequestFilter.doFilterInternal(JwtRequestFilter.java:62)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.ServletRequestPathFilter.doFilter(ServletRequestPathFilter.java:52)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74)
+	at org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebSecurityConfiguration.java:319)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$4(HandlerMappingIntrospector.java:267)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74)
+	at org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:240)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:362)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:278)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:116)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:398)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1769)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1189)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:658)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+11/07/2025 19:45:05 [http-nio-8080-exec-1] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource usuarios.]
+11/07/2025 19:45:38 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+11/07/2025 19:45:38 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+11/07/2025 19:45:39 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+11/07/2025 19:45:39 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+11/07/2025 19:45:39 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+11/07/2025 19:45:44 [restartedMain] INFO  c.lojatenis.LojaTenisApiApplication - Starting LojaTenisApiApplication using Java 21.0.6 with PID 12880 (C:\Users\Allef\IdeaProjects\loja-tenis-api\target\classes started by Allef in C:\Users\Allef\IdeaProjects\loja-tenis-api)
+11/07/2025 19:45:44 [restartedMain] INFO  c.lojatenis.LojaTenisApiApplication - No active profile set, falling back to 1 default profile: "default"
+11/07/2025 19:45:44 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+11/07/2025 19:45:44 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+11/07/2025 19:45:45 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+11/07/2025 19:45:45 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 61 ms. Found 5 JPA repository interfaces.
+11/07/2025 19:45:46 [restartedMain] DEBUG o.s.a.a.a.ReflectiveAspectJAdvisorFactory - Found AspectJ method: public java.lang.Object com.lojatenis.config.DatabaseLogger.logDatabaseOperation(org.aspectj.lang.ProceedingJoinPoint) throws java.lang.Throwable
+11/07/2025 19:45:46 [restartedMain] DEBUG o.s.a.a.a.ReflectiveAspectJAdvisorFactory - Found AspectJ method: public java.lang.Object com.lojatenis.config.DatabaseLogger.logServiceOperation(org.aspectj.lang.ProceedingJoinPoint) throws java.lang.Throwable
+11/07/2025 19:45:46 [restartedMain] DEBUG o.s.a.a.a.ReflectiveAspectJAdvisorFactory - Found AspectJ method: public java.lang.Object com.lojatenis.config.LoggingAspect.logDatabaseOperation(org.aspectj.lang.ProceedingJoinPoint) throws java.lang.Throwable
+11/07/2025 19:45:46 [restartedMain] DEBUG o.s.a.a.a.ReflectiveAspectJAdvisorFactory - Found AspectJ method: public java.lang.Object com.lojatenis.config.LoggingAspect.logServiceOperation(org.aspectj.lang.ProceedingJoinPoint) throws java.lang.Throwable
+11/07/2025 19:45:46 [restartedMain] DEBUG o.s.a.a.a.ReflectiveAspectJAdvisorFactory - Found AspectJ method: public void org.springframework.beans.factory.aspectj.AbstractDependencyInjectionAspect.ajc$before$org_springframework_beans_factory_aspectj_AbstractDependencyInjectionAspect$1$e854fa65(java.lang.Object)
+11/07/2025 19:45:46 [restartedMain] DEBUG o.s.a.a.a.ReflectiveAspectJAdvisorFactory - Found AspectJ method: public void org.springframework.beans.factory.aspectj.AbstractDependencyInjectionAspect.ajc$afterReturning$org_springframework_beans_factory_aspectj_AbstractDependencyInjectionAspect$2$1ea6722c(java.lang.Object)
+11/07/2025 19:45:46 [restartedMain] DEBUG o.s.a.a.a.ReflectiveAspectJAdvisorFactory - Found AspectJ method: public void org.springframework.beans.factory.aspectj.AbstractDependencyInjectionAspect.ajc$afterReturning$org_springframework_beans_factory_aspectj_AbstractDependencyInjectionAspect$3$6aa27052(java.lang.Object)
+11/07/2025 19:45:46 [restartedMain] DEBUG o.s.a.a.AspectJExpressionPointcut - Pointcut parser rejected expression [(beanConstruction(bean) && (preConstructionCondition() && inConfigurableBean()))]: java.lang.IllegalArgumentException: error Type referred to is not an annotation type: Configurable
+11/07/2025 19:45:46 [restartedMain] DEBUG o.s.a.a.AspectJExpressionPointcut - Pointcut parser rejected expression [(beanConstruction(bean) && (postConstructionCondition() && inConfigurableBean()))]: java.lang.IllegalArgumentException: error Type referred to is not an annotation type: Configurable
+11/07/2025 19:45:46 [restartedMain] DEBUG o.s.a.a.AspectJExpressionPointcut - Pointcut parser rejected expression [(beanDeserialization(bean) && inConfigurableBean())]: java.lang.IllegalArgumentException: error Type referred to is not an annotation type: Configurable
+11/07/2025 19:45:46 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+11/07/2025 19:45:46 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+11/07/2025 19:45:46 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.42]
+11/07/2025 19:45:46 [restartedMain] INFO  o.a.c.c.C.[.[localhost].[/api] - Initializing Spring embedded WebApplicationContext
+11/07/2025 19:45:46 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2211 ms
+11/07/2025 19:45:47 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+11/07/2025 19:45:47 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.18.Final
+11/07/2025 19:45:47 [restartedMain] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+11/07/2025 19:45:47 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+11/07/2025 19:45:47 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+11/07/2025 19:45:47 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@2c77637d
+11/07/2025 19:45:47 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+11/07/2025 19:45:47 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+11/07/2025 19:45:47 [restartedMain] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 17.5
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+11/07/2025 19:45:48 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+11/07/2025 19:45:49 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+11/07/2025 19:45:49 [restartedMain] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+11/07/2025 19:45:50 [restartedMain] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+11/07/2025 19:45:51 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+11/07/2025 19:45:51 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/api'
+11/07/2025 19:45:51 [restartedMain] INFO  c.lojatenis.LojaTenisApiApplication - Started LojaTenisApiApplication in 7.501 seconds (process running for 8.589)
+11/07/2025 19:46:51 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[.[localhost].[/api] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+11/07/2025 19:46:51 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+11/07/2025 19:46:51 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 24 ms
+11/07/2025 19:46:51 [http-nio-8080-exec-1] INFO  com.lojatenis.config.DatabaseLogger - 🔍 [DATABASE] 11/07/2025 19:46:51 | Executando: $Proxy158.findActiveByEmail | Argumentos: ["admin@lojatenis.com"]
+11/07/2025 19:46:51 [http-nio-8080-exec-1] INFO  com.lojatenis.config.LoggingAspect - 🔍 Executando operação de banco: $Proxy158.findActiveByEmail com argumentos: [admin@lojatenis.com]
+11/07/2025 19:46:51 [http-nio-8080-exec-1] DEBUG org.hibernate.SQL - 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.deleted,
+        u1_0.email,
+        u1_0.endereco_id,
+        u1_0.nome,
+        u1_0.role,
+        u1_0.senha,
+        u1_0.telefone,
+        u1_0.updated_at 
+    from
+        usuarios u1_0 
+    where
+        u1_0.deleted=false 
+        and u1_0.email=?
+11/07/2025 19:46:51 [http-nio-8080-exec-1] INFO  com.lojatenis.config.LoggingAspect - ✅ Operação $Proxy158.findActiveByEmail concluída em 339ms
+11/07/2025 19:46:51 [http-nio-8080-exec-1] INFO  com.lojatenis.config.DatabaseLogger - ✅ [DATABASE] 11/07/2025 19:46:51 | Sucesso: $Proxy158.findActiveByEmail | Tempo: 341ms | Resultado: Optional[com.lojatenis.domain.Usuario@11b89a78]
+11/07/2025 19:46:51 [http-nio-8080-exec-1] ERROR c.l.exception.GlobalExceptionHandler - Erro interno do servidor: No static resource usuarios.
+org.springframework.web.servlet.resource.NoResourceFoundException: No static resource usuarios.
+	at org.springframework.web.servlet.resource.ResourceHttpRequestHandler.handleRequest(ResourceHttpRequestHandler.java:585)
+	at org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter.handle(HttpRequestHandlerAdapter.java:52)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:110)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108)
+	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:231)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:365)
+	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:101)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:125)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:131)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:85)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:179)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at com.lojatenis.security.JwtRequestFilter.doFilterInternal(JwtRequestFilter.java:62)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.ServletRequestPathFilter.doFilter(ServletRequestPathFilter.java:52)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74)
+	at org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebSecurityConfiguration.java:319)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$4(HandlerMappingIntrospector.java:267)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74)
+	at org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:240)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:362)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:278)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:116)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:398)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1769)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1189)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:658)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+11/07/2025 19:46:51 [http-nio-8080-exec-1] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource usuarios.]
+11/07/2025 19:50:31 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+11/07/2025 19:50:31 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+11/07/2025 19:50:31 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+11/07/2025 19:50:31 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+11/07/2025 19:50:31 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+11/07/2025 19:52:22 [restartedMain] INFO  c.lojatenis.LojaTenisApiApplication - Starting LojaTenisApiApplication using Java 21.0.6 with PID 2504 (C:\Users\Allef\IdeaProjects\loja-tenis-api\target\classes started by Allef in C:\Users\Allef\IdeaProjects\loja-tenis-api)
+11/07/2025 19:52:22 [restartedMain] INFO  c.lojatenis.LojaTenisApiApplication - No active profile set, falling back to 1 default profile: "default"
+11/07/2025 19:52:22 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+11/07/2025 19:52:22 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+11/07/2025 19:52:23 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+11/07/2025 19:52:23 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 31 ms. Found 5 JPA repository interfaces.
+11/07/2025 19:52:23 [restartedMain] DEBUG o.s.a.a.a.ReflectiveAspectJAdvisorFactory - Found AspectJ method: public java.lang.Object com.lojatenis.config.DatabaseLogger.logDatabaseOperation(org.aspectj.lang.ProceedingJoinPoint) throws java.lang.Throwable
+11/07/2025 19:52:23 [restartedMain] DEBUG o.s.a.a.a.ReflectiveAspectJAdvisorFactory - Found AspectJ method: public java.lang.Object com.lojatenis.config.DatabaseLogger.logServiceOperation(org.aspectj.lang.ProceedingJoinPoint) throws java.lang.Throwable
+11/07/2025 19:52:23 [restartedMain] DEBUG o.s.a.a.a.ReflectiveAspectJAdvisorFactory - Found AspectJ method: public java.lang.Object com.lojatenis.config.LoggingAspect.logDatabaseOperation(org.aspectj.lang.ProceedingJoinPoint) throws java.lang.Throwable
+11/07/2025 19:52:23 [restartedMain] DEBUG o.s.a.a.a.ReflectiveAspectJAdvisorFactory - Found AspectJ method: public java.lang.Object com.lojatenis.config.LoggingAspect.logServiceOperation(org.aspectj.lang.ProceedingJoinPoint) throws java.lang.Throwable
+11/07/2025 19:52:23 [restartedMain] DEBUG o.s.a.a.a.ReflectiveAspectJAdvisorFactory - Found AspectJ method: public void org.springframework.beans.factory.aspectj.AbstractDependencyInjectionAspect.ajc$before$org_springframework_beans_factory_aspectj_AbstractDependencyInjectionAspect$1$e854fa65(java.lang.Object)
+11/07/2025 19:52:23 [restartedMain] DEBUG o.s.a.a.a.ReflectiveAspectJAdvisorFactory - Found AspectJ method: public void org.springframework.beans.factory.aspectj.AbstractDependencyInjectionAspect.ajc$afterReturning$org_springframework_beans_factory_aspectj_AbstractDependencyInjectionAspect$2$1ea6722c(java.lang.Object)
+11/07/2025 19:52:23 [restartedMain] DEBUG o.s.a.a.a.ReflectiveAspectJAdvisorFactory - Found AspectJ method: public void org.springframework.beans.factory.aspectj.AbstractDependencyInjectionAspect.ajc$afterReturning$org_springframework_beans_factory_aspectj_AbstractDependencyInjectionAspect$3$6aa27052(java.lang.Object)
+11/07/2025 19:52:23 [restartedMain] DEBUG o.s.a.a.AspectJExpressionPointcut - Pointcut parser rejected expression [(beanConstruction(bean) && (preConstructionCondition() && inConfigurableBean()))]: java.lang.IllegalArgumentException: error at ::0 can't find referenced pointcut mostSpecificSubTypeConstruction
+11/07/2025 19:52:23 [restartedMain] DEBUG o.s.a.a.AspectJExpressionPointcut - Pointcut parser rejected expression [(beanConstruction(bean) && (postConstructionCondition() && inConfigurableBean()))]: java.lang.IllegalArgumentException: error at ::0 can't find referenced pointcut mostSpecificSubTypeConstruction
+11/07/2025 19:52:23 [restartedMain] DEBUG o.s.a.a.AspectJExpressionPointcut - Pointcut parser rejected expression [(beanDeserialization(bean) && inConfigurableBean())]: java.lang.IllegalArgumentException: error at ::0 can't find referenced pointcut mostSpecificSubTypeConstruction
+11/07/2025 19:52:24 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+11/07/2025 19:52:24 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+11/07/2025 19:52:24 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.42]
+11/07/2025 19:52:24 [restartedMain] INFO  o.a.c.c.C.[.[localhost].[/api] - Initializing Spring embedded WebApplicationContext
+11/07/2025 19:52:24 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1324 ms
+11/07/2025 19:52:24 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+11/07/2025 19:52:24 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.18.Final
+11/07/2025 19:52:24 [restartedMain] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+11/07/2025 19:52:24 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+11/07/2025 19:52:24 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+11/07/2025 19:52:24 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@3ec0bec6
+11/07/2025 19:52:24 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+11/07/2025 19:52:24 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+11/07/2025 19:52:24 [restartedMain] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 17.5
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+11/07/2025 19:52:25 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+11/07/2025 19:52:25 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+11/07/2025 19:52:26 [restartedMain] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+11/07/2025 19:52:26 [restartedMain] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+11/07/2025 19:52:28 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+11/07/2025 19:52:28 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/api'
+11/07/2025 19:52:28 [restartedMain] INFO  c.lojatenis.LojaTenisApiApplication - Started LojaTenisApiApplication in 5.72 seconds (process running for 6.533)
+11/07/2025 19:52:50 [http-nio-8080-exec-2] INFO  o.a.c.c.C.[.[localhost].[/api] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+11/07/2025 19:52:50 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+11/07/2025 19:52:50 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+11/07/2025 19:52:50 [http-nio-8080-exec-2] INFO  com.lojatenis.config.DatabaseLogger - 🔍 [DATABASE] 11/07/2025 19:52:50 | Executando: $Proxy158.findActiveByEmail | Argumentos: ["admin@lojatenis.com"]
+11/07/2025 19:52:50 [http-nio-8080-exec-2] INFO  com.lojatenis.config.LoggingAspect - 🔍 Executando operação de banco: $Proxy158.findActiveByEmail com argumentos: [admin@lojatenis.com]
+11/07/2025 19:52:50 [http-nio-8080-exec-2] DEBUG org.hibernate.SQL - 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.deleted,
+        u1_0.email,
+        u1_0.endereco_id,
+        u1_0.nome,
+        u1_0.role,
+        u1_0.senha,
+        u1_0.telefone,
+        u1_0.updated_at 
+    from
+        usuarios u1_0 
+    where
+        u1_0.deleted=false 
+        and u1_0.email=?
+11/07/2025 19:52:50 [http-nio-8080-exec-2] INFO  com.lojatenis.config.LoggingAspect - ✅ Operação $Proxy158.findActiveByEmail concluída em 113ms
+11/07/2025 19:52:50 [http-nio-8080-exec-2] INFO  com.lojatenis.config.DatabaseLogger - ✅ [DATABASE] 11/07/2025 19:52:50 | Sucesso: $Proxy158.findActiveByEmail | Tempo: 113ms | Resultado: Optional[com.lojatenis.domain.Usuario@e0deeae]
+11/07/2025 19:52:51 [http-nio-8080-exec-2] INFO  c.lojatenis.service.UsuarioService - Buscando todos os usuários ativos - Página: 0, Tamanho: 10
+11/07/2025 19:52:51 [http-nio-8080-exec-2] INFO  com.lojatenis.config.DatabaseLogger - 🔍 [DATABASE] 11/07/2025 19:52:51 | Executando: $Proxy158.findAllActive | Argumentos: [Page request [number: 0, size 10, sort: id: ASC]]
+11/07/2025 19:52:51 [http-nio-8080-exec-2] INFO  com.lojatenis.config.LoggingAspect - 🔍 Executando operação de banco: $Proxy158.findAllActive com argumentos: [Page request [number: 0, size 10, sort: id: ASC]]
+11/07/2025 19:52:51 [http-nio-8080-exec-2] DEBUG org.hibernate.SQL - 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.deleted,
+        u1_0.email,
+        u1_0.endereco_id,
+        u1_0.nome,
+        u1_0.role,
+        u1_0.senha,
+        u1_0.telefone,
+        u1_0.updated_at 
+    from
+        usuarios u1_0 
+    where
+        u1_0.deleted=false 
+    order by
+        u1_0.id 
+    fetch
+        first ? rows only
+11/07/2025 19:52:51 [http-nio-8080-exec-2] INFO  com.lojatenis.config.LoggingAspect - ✅ Operação $Proxy158.findAllActive concluída em 16ms
+11/07/2025 19:52:51 [http-nio-8080-exec-2] INFO  com.lojatenis.config.DatabaseLogger - ✅ [DATABASE] 11/07/2025 19:52:51 | Sucesso: $Proxy158.findAllActive | Tempo: 16ms | Resultado: Page[1 items, 1 total]
+11/07/2025 19:54:48 [http-nio-8080-exec-3] INFO  com.lojatenis.config.DatabaseLogger - 🔍 [DATABASE] 11/07/2025 19:54:48 | Executando: $Proxy158.findActiveByEmail | Argumentos: ["admin@lojatenis.com"]
+11/07/2025 19:54:48 [http-nio-8080-exec-3] INFO  com.lojatenis.config.LoggingAspect - 🔍 Executando operação de banco: $Proxy158.findActiveByEmail com argumentos: [admin@lojatenis.com]
+11/07/2025 19:54:48 [http-nio-8080-exec-3] DEBUG org.hibernate.SQL - 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.deleted,
+        u1_0.email,
+        u1_0.endereco_id,
+        u1_0.nome,
+        u1_0.role,
+        u1_0.senha,
+        u1_0.telefone,
+        u1_0.updated_at 
+    from
+        usuarios u1_0 
+    where
+        u1_0.deleted=false 
+        and u1_0.email=?
+11/07/2025 19:54:48 [http-nio-8080-exec-3] INFO  com.lojatenis.config.LoggingAspect - ✅ Operação $Proxy158.findActiveByEmail concluída em 20ms
+11/07/2025 19:54:48 [http-nio-8080-exec-3] INFO  com.lojatenis.config.DatabaseLogger - ✅ [DATABASE] 11/07/2025 19:54:48 | Sucesso: $Proxy158.findActiveByEmail | Tempo: 20ms | Resultado: Optional[com.lojatenis.domain.Usuario@6b0e5620]
+11/07/2025 19:54:48 [http-nio-8080-exec-3] INFO  c.lojatenis.service.UsuarioService - Buscando usuário por ID: 1
+11/07/2025 19:54:48 [http-nio-8080-exec-3] INFO  com.lojatenis.config.DatabaseLogger - 🔍 [DATABASE] 11/07/2025 19:54:48 | Executando: $Proxy158.findActiveById | Argumentos: [1]
+11/07/2025 19:54:48 [http-nio-8080-exec-3] INFO  com.lojatenis.config.LoggingAspect - 🔍 Executando operação de banco: $Proxy158.findActiveById com argumentos: [1]
+11/07/2025 19:54:48 [http-nio-8080-exec-3] DEBUG org.hibernate.SQL - 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.deleted,
+        u1_0.email,
+        u1_0.endereco_id,
+        u1_0.nome,
+        u1_0.role,
+        u1_0.senha,
+        u1_0.telefone,
+        u1_0.updated_at 
+    from
+        usuarios u1_0 
+    where
+        u1_0.deleted=false 
+        and u1_0.id=?
+11/07/2025 19:54:48 [http-nio-8080-exec-3] INFO  com.lojatenis.config.LoggingAspect - ✅ Operação $Proxy158.findActiveById concluída em 14ms
+11/07/2025 19:54:48 [http-nio-8080-exec-3] INFO  com.lojatenis.config.DatabaseLogger - ✅ [DATABASE] 11/07/2025 19:54:48 | Sucesso: $Proxy158.findActiveById | Tempo: 14ms | Resultado: Optional[com.lojatenis.domain.Usuario@1788740d]
+11/07/2025 20:03:55 [http-nio-8080-exec-5] INFO  com.lojatenis.config.DatabaseLogger - 🔍 [DATABASE] 11/07/2025 20:03:55 | Executando: $Proxy158.findActiveByEmail | Argumentos: ["admin@lojatenis.com"]
+11/07/2025 20:03:55 [http-nio-8080-exec-5] INFO  com.lojatenis.config.LoggingAspect - 🔍 Executando operação de banco: $Proxy158.findActiveByEmail com argumentos: [admin@lojatenis.com]
+11/07/2025 20:03:55 [http-nio-8080-exec-5] DEBUG org.hibernate.SQL - 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.deleted,
+        u1_0.email,
+        u1_0.endereco_id,
+        u1_0.nome,
+        u1_0.role,
+        u1_0.senha,
+        u1_0.telefone,
+        u1_0.updated_at 
+    from
+        usuarios u1_0 
+    where
+        u1_0.deleted=false 
+        and u1_0.email=?
+11/07/2025 20:03:55 [http-nio-8080-exec-5] INFO  com.lojatenis.config.LoggingAspect - ✅ Operação $Proxy158.findActiveByEmail concluída em 18ms
+11/07/2025 20:03:55 [http-nio-8080-exec-5] INFO  com.lojatenis.config.DatabaseLogger - ✅ [DATABASE] 11/07/2025 20:03:55 | Sucesso: $Proxy158.findActiveByEmail | Tempo: 18ms | Resultado: Optional[com.lojatenis.domain.Usuario@718fb6eb]
+11/07/2025 20:03:55 [http-nio-8080-exec-5] INFO  c.lojatenis.service.CategoriaService - Atualizando categoria ID: 1
+11/07/2025 20:03:55 [http-nio-8080-exec-5] INFO  com.lojatenis.config.DatabaseLogger - 🔍 [DATABASE] 11/07/2025 20:03:55 | Executando: $Proxy165.findActiveById | Argumentos: [1]
+11/07/2025 20:03:55 [http-nio-8080-exec-5] INFO  com.lojatenis.config.LoggingAspect - 🔍 Executando operação de banco: $Proxy165.findActiveById com argumentos: [1]
+11/07/2025 20:03:55 [http-nio-8080-exec-5] DEBUG org.hibernate.SQL - 
+    select
+        c1_0.id,
+        c1_0.created_at,
+        c1_0.deleted,
+        c1_0.descricao,
+        c1_0.nome,
+        c1_0.updated_at 
+    from
+        categorias c1_0 
+    where
+        c1_0.deleted=false 
+        and c1_0.id=?
+11/07/2025 20:03:55 [http-nio-8080-exec-5] INFO  com.lojatenis.config.LoggingAspect - ✅ Operação $Proxy165.findActiveById concluída em 11ms
+11/07/2025 20:03:55 [http-nio-8080-exec-5] INFO  com.lojatenis.config.DatabaseLogger - ✅ [DATABASE] 11/07/2025 20:03:55 | Sucesso: $Proxy165.findActiveById | Tempo: 11ms | Resultado: Optional[com.lojatenis.domain.Categoria@55a72999]
+11/07/2025 20:03:55 [http-nio-8080-exec-5] INFO  com.lojatenis.config.DatabaseLogger - 🔍 [DATABASE] 11/07/2025 20:03:55 | Executando: $Proxy165.save | Argumentos: [Categoria@1437018521]
+11/07/2025 20:03:55 [http-nio-8080-exec-5] INFO  com.lojatenis.config.LoggingAspect - 🔍 Executando operação de banco: $Proxy165.save com argumentos: [com.lojatenis.domain.Categoria@55a72999]
+11/07/2025 20:03:55 [http-nio-8080-exec-5] INFO  com.lojatenis.config.LoggingAspect - ✅ Operação $Proxy165.save concluída em 14ms
+11/07/2025 20:03:55 [http-nio-8080-exec-5] INFO  com.lojatenis.config.DatabaseLogger - ✅ [DATABASE] 11/07/2025 20:03:55 | Sucesso: $Proxy165.save | Tempo: 14ms | Resultado: Categoria@1437018521
+11/07/2025 20:03:55 [http-nio-8080-exec-5] INFO  c.lojatenis.service.CategoriaService - Categoria atualizada com sucesso - ID: 1
+11/07/2025 20:03:55 [http-nio-8080-exec-5] DEBUG org.hibernate.SQL - 
+    update
+        categorias 
+    set
+        deleted=?,
+        descricao=?,
+        nome=?,
+        updated_at=? 
+    where
+        id=?
+11/07/2025 20:04:04 [http-nio-8080-exec-6] INFO  com.lojatenis.config.DatabaseLogger - 🔍 [DATABASE] 11/07/2025 20:04:04 | Executando: $Proxy158.findActiveByEmail | Argumentos: ["admin@lojatenis.com"]
+11/07/2025 20:04:04 [http-nio-8080-exec-6] INFO  com.lojatenis.config.LoggingAspect - 🔍 Executando operação de banco: $Proxy158.findActiveByEmail com argumentos: [admin@lojatenis.com]
+11/07/2025 20:04:04 [http-nio-8080-exec-6] DEBUG org.hibernate.SQL - 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.deleted,
+        u1_0.email,
+        u1_0.endereco_id,
+        u1_0.nome,
+        u1_0.role,
+        u1_0.senha,
+        u1_0.telefone,
+        u1_0.updated_at 
+    from
+        usuarios u1_0 
+    where
+        u1_0.deleted=false 
+        and u1_0.email=?
+11/07/2025 20:04:04 [http-nio-8080-exec-6] INFO  com.lojatenis.config.LoggingAspect - ✅ Operação $Proxy158.findActiveByEmail concluída em 3ms
+11/07/2025 20:04:04 [http-nio-8080-exec-6] INFO  com.lojatenis.config.DatabaseLogger - ✅ [DATABASE] 11/07/2025 20:04:04 | Sucesso: $Proxy158.findActiveByEmail | Tempo: 3ms | Resultado: Optional[com.lojatenis.domain.Usuario@724bc45b]
+11/07/2025 20:04:04 [http-nio-8080-exec-6] INFO  c.lojatenis.service.CategoriaService - Atualizando categoria ID: 1
+11/07/2025 20:04:04 [http-nio-8080-exec-6] INFO  com.lojatenis.config.DatabaseLogger - 🔍 [DATABASE] 11/07/2025 20:04:04 | Executando: $Proxy165.findActiveById | Argumentos: [1]
+11/07/2025 20:04:04 [http-nio-8080-exec-6] INFO  com.lojatenis.config.LoggingAspect - 🔍 Executando operação de banco: $Proxy165.findActiveById com argumentos: [1]
+11/07/2025 20:04:04 [http-nio-8080-exec-6] DEBUG org.hibernate.SQL - 
+    select
+        c1_0.id,
+        c1_0.created_at,
+        c1_0.deleted,
+        c1_0.descricao,
+        c1_0.nome,
+        c1_0.updated_at 
+    from
+        categorias c1_0 
+    where
+        c1_0.deleted=false 
+        and c1_0.id=?
+11/07/2025 20:04:04 [http-nio-8080-exec-6] INFO  com.lojatenis.config.LoggingAspect - ✅ Operação $Proxy165.findActiveById concluída em 1ms
+11/07/2025 20:04:04 [http-nio-8080-exec-6] INFO  com.lojatenis.config.DatabaseLogger - ✅ [DATABASE] 11/07/2025 20:04:04 | Sucesso: $Proxy165.findActiveById | Tempo: 2ms | Resultado: Optional[com.lojatenis.domain.Categoria@598c93f5]
+11/07/2025 20:04:04 [http-nio-8080-exec-6] INFO  com.lojatenis.config.DatabaseLogger - 🔍 [DATABASE] 11/07/2025 20:04:04 | Executando: $Proxy165.save | Argumentos: [Categoria@1502385141]
+11/07/2025 20:04:04 [http-nio-8080-exec-6] INFO  com.lojatenis.config.LoggingAspect - 🔍 Executando operação de banco: $Proxy165.save com argumentos: [com.lojatenis.domain.Categoria@598c93f5]
+11/07/2025 20:04:04 [http-nio-8080-exec-6] INFO  com.lojatenis.config.LoggingAspect - ✅ Operação $Proxy165.save concluída em 1ms
+11/07/2025 20:04:04 [http-nio-8080-exec-6] INFO  com.lojatenis.config.DatabaseLogger - ✅ [DATABASE] 11/07/2025 20:04:04 | Sucesso: $Proxy165.save | Tempo: 1ms | Resultado: Categoria@1502385141
+11/07/2025 20:04:04 [http-nio-8080-exec-6] INFO  c.lojatenis.service.CategoriaService - Categoria atualizada com sucesso - ID: 1
+11/07/2025 20:04:04 [http-nio-8080-exec-6] DEBUG org.hibernate.SQL - 
+    update
+        categorias 
+    set
+        deleted=?,
+        descricao=?,
+        nome=?,
+        updated_at=? 
+    where
+        id=?
+11/07/2025 20:04:10 [http-nio-8080-exec-7] INFO  com.lojatenis.config.DatabaseLogger - 🔍 [DATABASE] 11/07/2025 20:04:10 | Executando: $Proxy158.findActiveByEmail | Argumentos: ["admin@lojatenis.com"]
+11/07/2025 20:04:10 [http-nio-8080-exec-7] INFO  com.lojatenis.config.LoggingAspect - 🔍 Executando operação de banco: $Proxy158.findActiveByEmail com argumentos: [admin@lojatenis.com]
+11/07/2025 20:04:10 [http-nio-8080-exec-7] DEBUG org.hibernate.SQL - 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.deleted,
+        u1_0.email,
+        u1_0.endereco_id,
+        u1_0.nome,
+        u1_0.role,
+        u1_0.senha,
+        u1_0.telefone,
+        u1_0.updated_at 
+    from
+        usuarios u1_0 
+    where
+        u1_0.deleted=false 
+        and u1_0.email=?
+11/07/2025 20:04:10 [http-nio-8080-exec-7] INFO  com.lojatenis.config.LoggingAspect - ✅ Operação $Proxy158.findActiveByEmail concluída em 6ms
+11/07/2025 20:04:10 [http-nio-8080-exec-7] INFO  com.lojatenis.config.DatabaseLogger - ✅ [DATABASE] 11/07/2025 20:04:10 | Sucesso: $Proxy158.findActiveByEmail | Tempo: 6ms | Resultado: Optional[com.lojatenis.domain.Usuario@16a6eb5e]
+11/07/2025 20:04:10 [http-nio-8080-exec-7] INFO  c.lojatenis.service.CategoriaService - Atualizando categoria ID: 1
+11/07/2025 20:04:10 [http-nio-8080-exec-7] INFO  com.lojatenis.config.DatabaseLogger - 🔍 [DATABASE] 11/07/2025 20:04:10 | Executando: $Proxy165.findActiveById | Argumentos: [1]
+11/07/2025 20:04:10 [http-nio-8080-exec-7] INFO  com.lojatenis.config.LoggingAspect - 🔍 Executando operação de banco: $Proxy165.findActiveById com argumentos: [1]
+11/07/2025 20:04:10 [http-nio-8080-exec-7] DEBUG org.hibernate.SQL - 
+    select
+        c1_0.id,
+        c1_0.created_at,
+        c1_0.deleted,
+        c1_0.descricao,
+        c1_0.nome,
+        c1_0.updated_at 
+    from
+        categorias c1_0 
+    where
+        c1_0.deleted=false 
+        and c1_0.id=?
+11/07/2025 20:04:10 [http-nio-8080-exec-7] INFO  com.lojatenis.config.LoggingAspect - ✅ Operação $Proxy165.findActiveById concluída em 2ms
+11/07/2025 20:04:10 [http-nio-8080-exec-7] INFO  com.lojatenis.config.DatabaseLogger - ✅ [DATABASE] 11/07/2025 20:04:10 | Sucesso: $Proxy165.findActiveById | Tempo: 3ms | Resultado: Optional[com.lojatenis.domain.Categoria@43d7a2bf]
+11/07/2025 20:04:10 [http-nio-8080-exec-7] INFO  com.lojatenis.config.DatabaseLogger - 🔍 [DATABASE] 11/07/2025 20:04:10 | Executando: $Proxy165.save | Argumentos: [Categoria@1138205375]
+11/07/2025 20:04:10 [http-nio-8080-exec-7] INFO  com.lojatenis.config.LoggingAspect - 🔍 Executando operação de banco: $Proxy165.save com argumentos: [com.lojatenis.domain.Categoria@43d7a2bf]
+11/07/2025 20:04:10 [http-nio-8080-exec-7] INFO  com.lojatenis.config.LoggingAspect - ✅ Operação $Proxy165.save concluída em 1ms
+11/07/2025 20:04:10 [http-nio-8080-exec-7] INFO  com.lojatenis.config.DatabaseLogger - ✅ [DATABASE] 11/07/2025 20:04:10 | Sucesso: $Proxy165.save | Tempo: 1ms | Resultado: Categoria@1138205375
+11/07/2025 20:04:10 [http-nio-8080-exec-7] INFO  c.lojatenis.service.CategoriaService - Categoria atualizada com sucesso - ID: 1
+11/07/2025 20:04:10 [http-nio-8080-exec-7] DEBUG org.hibernate.SQL - 
+    update
+        categorias 
+    set
+        deleted=?,
+        descricao=?,
+        nome=?,
+        updated_at=? 
+    where
+        id=?
+11/07/2025 20:08:27 [http-nio-8080-exec-9] INFO  com.lojatenis.config.DatabaseLogger - 🔍 [DATABASE] 11/07/2025 20:08:27 | Executando: $Proxy158.findActiveByEmail | Argumentos: ["admin@lojatenis.com"]
+11/07/2025 20:08:27 [http-nio-8080-exec-9] INFO  com.lojatenis.config.LoggingAspect - 🔍 Executando operação de banco: $Proxy158.findActiveByEmail com argumentos: [admin@lojatenis.com]
+11/07/2025 20:08:27 [http-nio-8080-exec-9] DEBUG org.hibernate.SQL - 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.deleted,
+        u1_0.email,
+        u1_0.endereco_id,
+        u1_0.nome,
+        u1_0.role,
+        u1_0.senha,
+        u1_0.telefone,
+        u1_0.updated_at 
+    from
+        usuarios u1_0 
+    where
+        u1_0.deleted=false 
+        and u1_0.email=?
+11/07/2025 20:08:27 [http-nio-8080-exec-9] INFO  com.lojatenis.config.LoggingAspect - ✅ Operação $Proxy158.findActiveByEmail concluída em 22ms
+11/07/2025 20:08:27 [http-nio-8080-exec-9] INFO  com.lojatenis.config.DatabaseLogger - ✅ [DATABASE] 11/07/2025 20:08:27 | Sucesso: $Proxy158.findActiveByEmail | Tempo: 22ms | Resultado: Optional[com.lojatenis.domain.Usuario@481f7933]
+11/07/2025 20:08:27 [http-nio-8080-exec-9] INFO  com.lojatenis.service.TenisService - Buscando todos os tênis ativos - Página: 0, Tamanho: 10
+11/07/2025 20:08:27 [http-nio-8080-exec-9] INFO  com.lojatenis.config.DatabaseLogger - 🔍 [DATABASE] 11/07/2025 20:08:27 | Executando: $Proxy168.findAllActive | Argumentos: [Page request [number: 0, size 10, sort: id: ASC]]
+11/07/2025 20:08:27 [http-nio-8080-exec-9] INFO  com.lojatenis.config.LoggingAspect - 🔍 Executando operação de banco: $Proxy168.findAllActive com argumentos: [Page request [number: 0, size 10, sort: id: ASC]]
+11/07/2025 20:08:27 [http-nio-8080-exec-9] DEBUG org.hibernate.SQL - 
+    select
+        t1_0.id,
+        t1_0.cor,
+        t1_0.created_at,
+        t1_0.deleted,
+        t1_0.descricao,
+        t1_0.marca,
+        t1_0.material,
+        t1_0.modelo,
+        t1_0.nome,
+        t1_0.preco,
+        t1_0.updated_at 
+    from
+        tenis t1_0 
+    where
+        t1_0.deleted=false 
+    order by
+        t1_0.id 
+    fetch
+        first ? rows only
+11/07/2025 20:08:27 [http-nio-8080-exec-9] INFO  com.lojatenis.config.LoggingAspect - ✅ Operação $Proxy168.findAllActive concluída em 17ms
+11/07/2025 20:08:27 [http-nio-8080-exec-9] INFO  com.lojatenis.config.DatabaseLogger - ✅ [DATABASE] 11/07/2025 20:08:27 | Sucesso: $Proxy168.findAllActive | Tempo: 18ms | Resultado: Page[2 items, 2 total]
+11/07/2025 20:08:27 [http-nio-8080-exec-9] DEBUG org.hibernate.SQL - 
+    select
+        c1_0.tenis_id,
+        c1_1.id,
+        c1_1.created_at,
+        c1_1.deleted,
+        c1_1.descricao,
+        c1_1.nome,
+        c1_1.updated_at 
+    from
+        tenis_categoria c1_0 
+    join
+        categorias c1_1 
+            on c1_1.id=c1_0.categoria_id 
+    where
+        c1_0.tenis_id=?
+11/07/2025 20:08:27 [http-nio-8080-exec-9] DEBUG org.hibernate.SQL - 
+    select
+        c1_0.tenis_id,
+        c1_1.id,
+        c1_1.created_at,
+        c1_1.deleted,
+        c1_1.descricao,
+        c1_1.nome,
+        c1_1.updated_at 
+    from
+        tenis_categoria c1_0 
+    join
+        categorias c1_1 
+            on c1_1.id=c1_0.categoria_id 
+    where
+        c1_0.tenis_id=?
+11/07/2025 20:09:27 [http-nio-8080-exec-10] INFO  c.lojatenis.service.CategoriaService - Buscando categoria por ID: 1
+11/07/2025 20:09:27 [http-nio-8080-exec-10] INFO  com.lojatenis.config.DatabaseLogger - 🔍 [DATABASE] 11/07/2025 20:09:27 | Executando: $Proxy165.findActiveById | Argumentos: [1]
+11/07/2025 20:09:27 [http-nio-8080-exec-10] INFO  com.lojatenis.config.LoggingAspect - 🔍 Executando operação de banco: $Proxy165.findActiveById com argumentos: [1]
+11/07/2025 20:09:27 [http-nio-8080-exec-10] DEBUG org.hibernate.SQL - 
+    select
+        c1_0.id,
+        c1_0.created_at,
+        c1_0.deleted,
+        c1_0.descricao,
+        c1_0.nome,
+        c1_0.updated_at 
+    from
+        categorias c1_0 
+    where
+        c1_0.deleted=false 
+        and c1_0.id=?
+11/07/2025 20:09:27 [http-nio-8080-exec-10] INFO  com.lojatenis.config.LoggingAspect - ✅ Operação $Proxy165.findActiveById concluída em 5ms
+11/07/2025 20:09:27 [http-nio-8080-exec-10] INFO  com.lojatenis.config.DatabaseLogger - ✅ [DATABASE] 11/07/2025 20:09:27 | Sucesso: $Proxy165.findActiveById | Tempo: 6ms | Resultado: Optional[com.lojatenis.domain.Categoria@1dd13607]
+11/07/2025 20:10:45 [http-nio-8080-exec-1] INFO  com.lojatenis.config.DatabaseLogger - 🔍 [DATABASE] 11/07/2025 20:10:45 | Executando: $Proxy158.findActiveByEmail | Argumentos: ["admin@lojatenis.com"]
+11/07/2025 20:10:45 [http-nio-8080-exec-1] INFO  com.lojatenis.config.LoggingAspect - 🔍 Executando operação de banco: $Proxy158.findActiveByEmail com argumentos: [admin@lojatenis.com]
+11/07/2025 20:10:45 [http-nio-8080-exec-1] DEBUG org.hibernate.SQL - 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.deleted,
+        u1_0.email,
+        u1_0.endereco_id,
+        u1_0.nome,
+        u1_0.role,
+        u1_0.senha,
+        u1_0.telefone,
+        u1_0.updated_at 
+    from
+        usuarios u1_0 
+    where
+        u1_0.deleted=false 
+        and u1_0.email=?
+11/07/2025 20:10:45 [http-nio-8080-exec-1] INFO  com.lojatenis.config.LoggingAspect - ✅ Operação $Proxy158.findActiveByEmail concluída em 18ms
+11/07/2025 20:10:45 [http-nio-8080-exec-1] INFO  com.lojatenis.config.DatabaseLogger - ✅ [DATABASE] 11/07/2025 20:10:45 | Sucesso: $Proxy158.findActiveByEmail | Tempo: 18ms | Resultado: Optional[com.lojatenis.domain.Usuario@2f4f3461]
+11/07/2025 20:10:45 [http-nio-8080-exec-1] INFO  com.lojatenis.service.TenisService - Atualizando tênis ID: 1
+11/07/2025 20:10:45 [http-nio-8080-exec-1] INFO  com.lojatenis.config.DatabaseLogger - 🔍 [DATABASE] 11/07/2025 20:10:45 | Executando: $Proxy168.findActiveById | Argumentos: [1]
+11/07/2025 20:10:45 [http-nio-8080-exec-1] INFO  com.lojatenis.config.LoggingAspect - 🔍 Executando operação de banco: $Proxy168.findActiveById com argumentos: [1]
+11/07/2025 20:10:45 [http-nio-8080-exec-1] DEBUG org.hibernate.SQL - 
+    select
+        t1_0.id,
+        t1_0.cor,
+        t1_0.created_at,
+        t1_0.deleted,
+        t1_0.descricao,
+        t1_0.marca,
+        t1_0.material,
+        t1_0.modelo,
+        t1_0.nome,
+        t1_0.preco,
+        t1_0.updated_at 
+    from
+        tenis t1_0 
+    where
+        t1_0.deleted=false 
+        and t1_0.id=?
+11/07/2025 20:10:45 [http-nio-8080-exec-1] INFO  com.lojatenis.config.LoggingAspect - ✅ Operação $Proxy168.findActiveById concluída em 11ms
+11/07/2025 20:10:45 [http-nio-8080-exec-1] INFO  com.lojatenis.config.DatabaseLogger - ✅ [DATABASE] 11/07/2025 20:10:45 | Sucesso: $Proxy168.findActiveById | Tempo: 11ms | Resultado: Optional[com.lojatenis.domain.Tenis@12c49759]
+11/07/2025 20:10:45 [http-nio-8080-exec-1] INFO  com.lojatenis.config.DatabaseLogger - 🔍 [DATABASE] 11/07/2025 20:10:45 | Executando: $Proxy165.findActiveById | Argumentos: [1]
+11/07/2025 20:10:45 [http-nio-8080-exec-1] INFO  com.lojatenis.config.LoggingAspect - 🔍 Executando operação de banco: $Proxy165.findActiveById com argumentos: [1]
+11/07/2025 20:10:45 [http-nio-8080-exec-1] DEBUG org.hibernate.SQL - 
+    select
+        c1_0.id,
+        c1_0.created_at,
+        c1_0.deleted,
+        c1_0.descricao,
+        c1_0.nome,
+        c1_0.updated_at 
+    from
+        categorias c1_0 
+    where
+        c1_0.deleted=false 
+        and c1_0.id=?
+11/07/2025 20:10:45 [http-nio-8080-exec-1] INFO  com.lojatenis.config.LoggingAspect - ✅ Operação $Proxy165.findActiveById concluída em 4ms
+11/07/2025 20:10:45 [http-nio-8080-exec-1] INFO  com.lojatenis.config.DatabaseLogger - ✅ [DATABASE] 11/07/2025 20:10:45 | Sucesso: $Proxy165.findActiveById | Tempo: 4ms | Resultado: Optional[com.lojatenis.domain.Categoria@436c1fff]
+11/07/2025 20:10:45 [http-nio-8080-exec-1] INFO  com.lojatenis.config.DatabaseLogger - 🔍 [DATABASE] 11/07/2025 20:10:45 | Executando: $Proxy165.findActiveById | Argumentos: [2]
+11/07/2025 20:10:45 [http-nio-8080-exec-1] INFO  com.lojatenis.config.LoggingAspect - 🔍 Executando operação de banco: $Proxy165.findActiveById com argumentos: [2]
+11/07/2025 20:10:45 [http-nio-8080-exec-1] DEBUG org.hibernate.SQL - 
+    select
+        c1_0.id,
+        c1_0.created_at,
+        c1_0.deleted,
+        c1_0.descricao,
+        c1_0.nome,
+        c1_0.updated_at 
+    from
+        categorias c1_0 
+    where
+        c1_0.deleted=false 
+        and c1_0.id=?
+11/07/2025 20:10:45 [http-nio-8080-exec-1] INFO  com.lojatenis.config.LoggingAspect - ✅ Operação $Proxy165.findActiveById concluída em 2ms
+11/07/2025 20:10:45 [http-nio-8080-exec-1] INFO  com.lojatenis.config.DatabaseLogger - ✅ [DATABASE] 11/07/2025 20:10:45 | Sucesso: $Proxy165.findActiveById | Tempo: 2ms | Resultado: Optional[com.lojatenis.domain.Categoria@1aacbacd]
+11/07/2025 20:10:45 [http-nio-8080-exec-1] INFO  com.lojatenis.config.DatabaseLogger - 🔍 [DATABASE] 11/07/2025 20:10:45 | Executando: $Proxy168.save | Argumentos: [Tenis@314873689]
+11/07/2025 20:10:45 [http-nio-8080-exec-1] INFO  com.lojatenis.config.LoggingAspect - 🔍 Executando operação de banco: $Proxy168.save com argumentos: [com.lojatenis.domain.Tenis@12c49759]
+11/07/2025 20:10:45 [http-nio-8080-exec-1] INFO  com.lojatenis.config.LoggingAspect - ✅ Operação $Proxy168.save concluída em 16ms
+11/07/2025 20:10:45 [http-nio-8080-exec-1] INFO  com.lojatenis.config.DatabaseLogger - ✅ [DATABASE] 11/07/2025 20:10:45 | Sucesso: $Proxy168.save | Tempo: 16ms | Resultado: Tenis@314873689
+11/07/2025 20:10:45 [http-nio-8080-exec-1] INFO  com.lojatenis.service.TenisService - Tênis atualizado com sucesso - ID: 1
+11/07/2025 20:10:45 [http-nio-8080-exec-1] DEBUG org.hibernate.SQL - 
+    update
+        tenis 
+    set
+        cor=?,
+        deleted=?,
+        descricao=?,
+        marca=?,
+        material=?,
+        modelo=?,
+        nome=?,
+        preco=?,
+        updated_at=? 
+    where
+        id=?
+11/07/2025 20:10:45 [http-nio-8080-exec-1] DEBUG org.hibernate.SQL - 
+    delete 
+    from
+        tenis_categoria 
+    where
+        tenis_id=?
+11/07/2025 20:10:45 [http-nio-8080-exec-1] DEBUG org.hibernate.SQL - 
+    insert 
+    into
+        tenis_categoria
+        (tenis_id, categoria_id) 
+    values
+        (?, ?)
+11/07/2025 20:10:45 [http-nio-8080-exec-1] DEBUG org.hibernate.SQL - 
+    insert 
+    into
+        tenis_categoria
+        (tenis_id, categoria_id) 
+    values
+        (?, ?)
+11/07/2025 20:11:09 [http-nio-8080-exec-3] INFO  com.lojatenis.config.DatabaseLogger - 🔍 [DATABASE] 11/07/2025 20:11:09 | Executando: $Proxy158.findActiveByEmail | Argumentos: ["admin@lojatenis.com"]
+11/07/2025 20:11:09 [http-nio-8080-exec-3] INFO  com.lojatenis.config.LoggingAspect - 🔍 Executando operação de banco: $Proxy158.findActiveByEmail com argumentos: [admin@lojatenis.com]
+11/07/2025 20:11:09 [http-nio-8080-exec-3] DEBUG org.hibernate.SQL - 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.deleted,
+        u1_0.email,
+        u1_0.endereco_id,
+        u1_0.nome,
+        u1_0.role,
+        u1_0.senha,
+        u1_0.telefone,
+        u1_0.updated_at 
+    from
+        usuarios u1_0 
+    where
+        u1_0.deleted=false 
+        and u1_0.email=?
+11/07/2025 20:11:09 [http-nio-8080-exec-3] INFO  com.lojatenis.config.LoggingAspect - ✅ Operação $Proxy158.findActiveByEmail concluída em 6ms
+11/07/2025 20:11:09 [http-nio-8080-exec-3] INFO  com.lojatenis.config.DatabaseLogger - ✅ [DATABASE] 11/07/2025 20:11:09 | Sucesso: $Proxy158.findActiveByEmail | Tempo: 7ms | Resultado: Optional[com.lojatenis.domain.Usuario@5d0a2f04]
+11/07/2025 20:11:09 [http-nio-8080-exec-3] INFO  com.lojatenis.service.TenisService - Atualizando tênis ID: 1
+11/07/2025 20:11:09 [http-nio-8080-exec-3] INFO  com.lojatenis.config.DatabaseLogger - 🔍 [DATABASE] 11/07/2025 20:11:09 | Executando: $Proxy168.findActiveById | Argumentos: [1]
+11/07/2025 20:11:09 [http-nio-8080-exec-3] INFO  com.lojatenis.config.LoggingAspect - 🔍 Executando operação de banco: $Proxy168.findActiveById com argumentos: [1]
+11/07/2025 20:11:09 [http-nio-8080-exec-3] DEBUG org.hibernate.SQL - 
+    select
+        t1_0.id,
+        t1_0.cor,
+        t1_0.created_at,
+        t1_0.deleted,
+        t1_0.descricao,
+        t1_0.marca,
+        t1_0.material,
+        t1_0.modelo,
+        t1_0.nome,
+        t1_0.preco,
+        t1_0.updated_at 
+    from
+        tenis t1_0 
+    where
+        t1_0.deleted=false 
+        and t1_0.id=?
+11/07/2025 20:11:09 [http-nio-8080-exec-3] INFO  com.lojatenis.config.LoggingAspect - ✅ Operação $Proxy168.findActiveById concluída em 2ms
+11/07/2025 20:11:09 [http-nio-8080-exec-3] INFO  com.lojatenis.config.DatabaseLogger - ✅ [DATABASE] 11/07/2025 20:11:09 | Sucesso: $Proxy168.findActiveById | Tempo: 2ms | Resultado: Optional[com.lojatenis.domain.Tenis@1f1bc8ae]
+11/07/2025 20:11:09 [http-nio-8080-exec-3] INFO  com.lojatenis.config.DatabaseLogger - 🔍 [DATABASE] 11/07/2025 20:11:09 | Executando: $Proxy165.findActiveById | Argumentos: [1]
+11/07/2025 20:11:09 [http-nio-8080-exec-3] INFO  com.lojatenis.config.LoggingAspect - 🔍 Executando operação de banco: $Proxy165.findActiveById com argumentos: [1]
+11/07/2025 20:11:09 [http-nio-8080-exec-3] DEBUG org.hibernate.SQL - 
+    select
+        c1_0.id,
+        c1_0.created_at,
+        c1_0.deleted,
+        c1_0.descricao,
+        c1_0.nome,
+        c1_0.updated_at 
+    from
+        categorias c1_0 
+    where
+        c1_0.deleted=false 
+        and c1_0.id=?
+11/07/2025 20:11:09 [http-nio-8080-exec-3] INFO  com.lojatenis.config.LoggingAspect - ✅ Operação $Proxy165.findActiveById concluída em 2ms
+11/07/2025 20:11:09 [http-nio-8080-exec-3] INFO  com.lojatenis.config.DatabaseLogger - ✅ [DATABASE] 11/07/2025 20:11:09 | Sucesso: $Proxy165.findActiveById | Tempo: 2ms | Resultado: Optional[com.lojatenis.domain.Categoria@1d4a68e6]
+11/07/2025 20:11:09 [http-nio-8080-exec-3] INFO  com.lojatenis.config.DatabaseLogger - 🔍 [DATABASE] 11/07/2025 20:11:09 | Executando: $Proxy168.save | Argumentos: [Tenis@521914542]
+11/07/2025 20:11:09 [http-nio-8080-exec-3] INFO  com.lojatenis.config.LoggingAspect - 🔍 Executando operação de banco: $Proxy168.save com argumentos: [com.lojatenis.domain.Tenis@1f1bc8ae]
+11/07/2025 20:11:09 [http-nio-8080-exec-3] INFO  com.lojatenis.config.LoggingAspect - ✅ Operação $Proxy168.save concluída em 1ms
+11/07/2025 20:11:09 [http-nio-8080-exec-3] INFO  com.lojatenis.config.DatabaseLogger - ✅ [DATABASE] 11/07/2025 20:11:09 | Sucesso: $Proxy168.save | Tempo: 1ms | Resultado: Tenis@521914542
+11/07/2025 20:11:09 [http-nio-8080-exec-3] INFO  com.lojatenis.service.TenisService - Tênis atualizado com sucesso - ID: 1
+11/07/2025 20:11:09 [http-nio-8080-exec-3] DEBUG org.hibernate.SQL - 
+    update
+        tenis 
+    set
+        cor=?,
+        deleted=?,
+        descricao=?,
+        marca=?,
+        material=?,
+        modelo=?,
+        nome=?,
+        preco=?,
+        updated_at=? 
+    where
+        id=?
+11/07/2025 20:11:09 [http-nio-8080-exec-3] DEBUG org.hibernate.SQL - 
+    delete 
+    from
+        tenis_categoria 
+    where
+        tenis_id=?
+11/07/2025 20:11:09 [http-nio-8080-exec-3] DEBUG org.hibernate.SQL - 
+    insert 
+    into
+        tenis_categoria
+        (tenis_id, categoria_id) 
+    values
+        (?, ?)
+11/07/2025 20:13:32 [http-nio-8080-exec-5] INFO  com.lojatenis.config.DatabaseLogger - 🔍 [DATABASE] 11/07/2025 20:13:32 | Executando: $Proxy158.findActiveByEmail | Argumentos: ["admin@lojatenis.com"]
+11/07/2025 20:13:32 [http-nio-8080-exec-5] INFO  com.lojatenis.config.LoggingAspect - 🔍 Executando operação de banco: $Proxy158.findActiveByEmail com argumentos: [admin@lojatenis.com]
+11/07/2025 20:13:32 [http-nio-8080-exec-5] DEBUG org.hibernate.SQL - 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.deleted,
+        u1_0.email,
+        u1_0.endereco_id,
+        u1_0.nome,
+        u1_0.role,
+        u1_0.senha,
+        u1_0.telefone,
+        u1_0.updated_at 
+    from
+        usuarios u1_0 
+    where
+        u1_0.deleted=false 
+        and u1_0.email=?
+11/07/2025 20:13:32 [http-nio-8080-exec-5] INFO  com.lojatenis.config.LoggingAspect - ✅ Operação $Proxy158.findActiveByEmail concluída em 16ms
+11/07/2025 20:13:32 [http-nio-8080-exec-5] INFO  com.lojatenis.config.DatabaseLogger - ✅ [DATABASE] 11/07/2025 20:13:32 | Sucesso: $Proxy158.findActiveByEmail | Tempo: 16ms | Resultado: Optional[com.lojatenis.domain.Usuario@7045040d]
+11/07/2025 20:13:32 [http-nio-8080-exec-5] INFO  com.lojatenis.service.TenisService - Realizando soft delete do tênis ID: 2
+11/07/2025 20:13:32 [http-nio-8080-exec-5] INFO  com.lojatenis.config.DatabaseLogger - 🔍 [DATABASE] 11/07/2025 20:13:32 | Executando: $Proxy168.existsActiveById | Argumentos: [2]
+11/07/2025 20:13:32 [http-nio-8080-exec-5] INFO  com.lojatenis.config.LoggingAspect - 🔍 Executando operação de banco: $Proxy168.existsActiveById com argumentos: [2]
+11/07/2025 20:13:32 [http-nio-8080-exec-5] DEBUG org.hibernate.SQL - 
+    select
+        case 
+            when count(t1_0.id)>0 
+                then true 
+            else false 
+    end 
+from
+    tenis t1_0 
+where
+    t1_0.deleted=false 
+    and t1_0.id=?
+11/07/2025 20:13:32 [http-nio-8080-exec-5] INFO  com.lojatenis.config.LoggingAspect - ✅ Operação $Proxy168.existsActiveById concluída em 65ms
+11/07/2025 20:13:32 [http-nio-8080-exec-5] INFO  com.lojatenis.config.DatabaseLogger - ✅ [DATABASE] 11/07/2025 20:13:32 | Sucesso: $Proxy168.existsActiveById | Tempo: 66ms | Resultado: true
+11/07/2025 20:13:32 [http-nio-8080-exec-5] INFO  com.lojatenis.config.DatabaseLogger - 🔍 [DATABASE] 11/07/2025 20:13:32 | Executando: $Proxy168.softDelete | Argumentos: [2]
+11/07/2025 20:13:32 [http-nio-8080-exec-5] INFO  com.lojatenis.config.LoggingAspect - 🔍 Executando operação de banco: $Proxy168.softDelete com argumentos: [2]
+11/07/2025 20:13:33 [http-nio-8080-exec-5] DEBUG org.hibernate.SQL - 
+    update
+        tenis t1_0 
+    set
+        deleted=true 
+    where
+        t1_0.id=?
+11/07/2025 20:13:33 [http-nio-8080-exec-5] INFO  com.lojatenis.config.LoggingAspect - ✅ Operação $Proxy168.softDelete concluída em 23ms
+11/07/2025 20:13:33 [http-nio-8080-exec-5] INFO  com.lojatenis.config.DatabaseLogger - ✅ [DATABASE] 11/07/2025 20:13:32 | Sucesso: $Proxy168.softDelete | Tempo: 23ms | Resultado: null
+11/07/2025 20:13:33 [http-nio-8080-exec-5] INFO  com.lojatenis.service.TenisService - Soft delete realizado com sucesso para tênis ID: 2
+11/07/2025 20:13:45 [http-nio-8080-exec-6] ERROR c.l.security.JwtRequestFilter - Erro ao extrair username do token JWT: JWT signature does not match locally computed signature. JWT validity cannot be asserted and should not be trusted.
+11/07/2025 20:13:45 [http-nio-8080-exec-6] ERROR c.l.s.JwtAuthenticationEntryPoint - Erro de autenticação: Full authentication is required to access this resource
+11/07/2025 20:14:09 [http-nio-8080-exec-7] INFO  com.lojatenis.config.DatabaseLogger - 🔍 [DATABASE] 11/07/2025 20:14:09 | Executando: $Proxy158.findActiveByEmail | Argumentos: ["admin@lojatenis.com"]
+11/07/2025 20:14:09 [http-nio-8080-exec-7] INFO  com.lojatenis.config.LoggingAspect - 🔍 Executando operação de banco: $Proxy158.findActiveByEmail com argumentos: [admin@lojatenis.com]
+11/07/2025 20:14:09 [http-nio-8080-exec-7] DEBUG org.hibernate.SQL - 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.deleted,
+        u1_0.email,
+        u1_0.endereco_id,
+        u1_0.nome,
+        u1_0.role,
+        u1_0.senha,
+        u1_0.telefone,
+        u1_0.updated_at 
+    from
+        usuarios u1_0 
+    where
+        u1_0.deleted=false 
+        and u1_0.email=?
+11/07/2025 20:14:09 [http-nio-8080-exec-7] INFO  com.lojatenis.config.LoggingAspect - ✅ Operação $Proxy158.findActiveByEmail concluída em 8ms
+11/07/2025 20:14:09 [http-nio-8080-exec-7] INFO  com.lojatenis.config.DatabaseLogger - ✅ [DATABASE] 11/07/2025 20:14:09 | Sucesso: $Proxy158.findActiveByEmail | Tempo: 8ms | Resultado: Optional[com.lojatenis.domain.Usuario@63136fd5]
+11/07/2025 20:14:09 [http-nio-8080-exec-7] INFO  com.lojatenis.service.TenisService - Criando novo tênis: Adidas Ultraboost
+11/07/2025 20:14:09 [http-nio-8080-exec-7] INFO  com.lojatenis.config.DatabaseLogger - 🔍 [DATABASE] 11/07/2025 20:14:09 | Executando: $Proxy165.findActiveById | Argumentos: [1]
+11/07/2025 20:14:09 [http-nio-8080-exec-7] INFO  com.lojatenis.config.LoggingAspect - 🔍 Executando operação de banco: $Proxy165.findActiveById com argumentos: [1]
+11/07/2025 20:14:09 [http-nio-8080-exec-7] DEBUG org.hibernate.SQL - 
+    select
+        c1_0.id,
+        c1_0.created_at,
+        c1_0.deleted,
+        c1_0.descricao,
+        c1_0.nome,
+        c1_0.updated_at 
+    from
+        categorias c1_0 
+    where
+        c1_0.deleted=false 
+        and c1_0.id=?
+11/07/2025 20:14:09 [http-nio-8080-exec-7] INFO  com.lojatenis.config.LoggingAspect - ✅ Operação $Proxy165.findActiveById concluída em 2ms
+11/07/2025 20:14:09 [http-nio-8080-exec-7] INFO  com.lojatenis.config.DatabaseLogger - ✅ [DATABASE] 11/07/2025 20:14:09 | Sucesso: $Proxy165.findActiveById | Tempo: 2ms | Resultado: Optional[com.lojatenis.domain.Categoria@491787a8]
+11/07/2025 20:14:09 [http-nio-8080-exec-7] INFO  com.lojatenis.config.DatabaseLogger - 🔍 [DATABASE] 11/07/2025 20:14:09 | Executando: $Proxy165.findActiveById | Argumentos: [2]
+11/07/2025 20:14:09 [http-nio-8080-exec-7] INFO  com.lojatenis.config.LoggingAspect - 🔍 Executando operação de banco: $Proxy165.findActiveById com argumentos: [2]
+11/07/2025 20:14:09 [http-nio-8080-exec-7] DEBUG org.hibernate.SQL - 
+    select
+        c1_0.id,
+        c1_0.created_at,
+        c1_0.deleted,
+        c1_0.descricao,
+        c1_0.nome,
+        c1_0.updated_at 
+    from
+        categorias c1_0 
+    where
+        c1_0.deleted=false 
+        and c1_0.id=?
+11/07/2025 20:14:09 [http-nio-8080-exec-7] INFO  com.lojatenis.config.LoggingAspect - ✅ Operação $Proxy165.findActiveById concluída em 2ms
+11/07/2025 20:14:09 [http-nio-8080-exec-7] INFO  com.lojatenis.config.DatabaseLogger - ✅ [DATABASE] 11/07/2025 20:14:09 | Sucesso: $Proxy165.findActiveById | Tempo: 2ms | Resultado: Optional[com.lojatenis.domain.Categoria@558535b2]
+11/07/2025 20:14:09 [http-nio-8080-exec-7] INFO  com.lojatenis.config.DatabaseLogger - 🔍 [DATABASE] 11/07/2025 20:14:09 | Executando: $Proxy165.findActiveById | Argumentos: [3]
+11/07/2025 20:14:09 [http-nio-8080-exec-7] INFO  com.lojatenis.config.LoggingAspect - 🔍 Executando operação de banco: $Proxy165.findActiveById com argumentos: [3]
+11/07/2025 20:14:09 [http-nio-8080-exec-7] DEBUG org.hibernate.SQL - 
+    select
+        c1_0.id,
+        c1_0.created_at,
+        c1_0.deleted,
+        c1_0.descricao,
+        c1_0.nome,
+        c1_0.updated_at 
+    from
+        categorias c1_0 
+    where
+        c1_0.deleted=false 
+        and c1_0.id=?
+11/07/2025 20:14:09 [http-nio-8080-exec-7] INFO  com.lojatenis.config.LoggingAspect - ✅ Operação $Proxy165.findActiveById concluída em 2ms
+11/07/2025 20:14:09 [http-nio-8080-exec-7] INFO  com.lojatenis.config.DatabaseLogger - ✅ [DATABASE] 11/07/2025 20:14:09 | Sucesso: $Proxy165.findActiveById | Tempo: 2ms | Resultado: Optional[com.lojatenis.domain.Categoria@5c7799e1]
+11/07/2025 20:14:09 [http-nio-8080-exec-7] INFO  com.lojatenis.config.DatabaseLogger - 🔍 [DATABASE] 11/07/2025 20:14:09 | Executando: $Proxy168.save | Argumentos: [Tenis@192418344]
+11/07/2025 20:14:09 [http-nio-8080-exec-7] INFO  com.lojatenis.config.LoggingAspect - 🔍 Executando operação de banco: $Proxy168.save com argumentos: [com.lojatenis.domain.Tenis@b781228]
+11/07/2025 20:14:09 [http-nio-8080-exec-7] DEBUG org.hibernate.SQL - 
+    insert 
+    into
+        tenis
+        (cor, created_at, deleted, descricao, marca, material, modelo, nome, preco, updated_at) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+11/07/2025 20:14:09 [http-nio-8080-exec-7] INFO  com.lojatenis.config.LoggingAspect - ✅ Operação $Proxy168.save concluída em 53ms
+11/07/2025 20:14:09 [http-nio-8080-exec-7] INFO  com.lojatenis.config.DatabaseLogger - ✅ [DATABASE] 11/07/2025 20:14:09 | Sucesso: $Proxy168.save | Tempo: 53ms | Resultado: Tenis@192418344
+11/07/2025 20:14:09 [http-nio-8080-exec-7] INFO  com.lojatenis.service.TenisService - Tênis criado com sucesso - ID: 3
+11/07/2025 20:14:09 [http-nio-8080-exec-7] DEBUG org.hibernate.SQL - 
+    insert 
+    into
+        tenis_categoria
+        (tenis_id, categoria_id) 
+    values
+        (?, ?)
+11/07/2025 20:14:09 [http-nio-8080-exec-7] DEBUG org.hibernate.SQL - 
+    insert 
+    into
+        tenis_categoria
+        (tenis_id, categoria_id) 
+    values
+        (?, ?)
+11/07/2025 20:14:09 [http-nio-8080-exec-7] DEBUG org.hibernate.SQL - 
+    insert 
+    into
+        tenis_categoria
+        (tenis_id, categoria_id) 
+    values
+        (?, ?)
+11/07/2025 20:15:27 [http-nio-8080-exec-9] INFO  com.lojatenis.config.DatabaseLogger - 🔍 [DATABASE] 11/07/2025 20:15:27 | Executando: $Proxy158.findActiveByEmail | Argumentos: ["admin@lojatenis.com"]
+11/07/2025 20:15:27 [http-nio-8080-exec-9] INFO  com.lojatenis.config.LoggingAspect - 🔍 Executando operação de banco: $Proxy158.findActiveByEmail com argumentos: [admin@lojatenis.com]
+11/07/2025 20:15:27 [http-nio-8080-exec-9] DEBUG org.hibernate.SQL - 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.deleted,
+        u1_0.email,
+        u1_0.endereco_id,
+        u1_0.nome,
+        u1_0.role,
+        u1_0.senha,
+        u1_0.telefone,
+        u1_0.updated_at 
+    from
+        usuarios u1_0 
+    where
+        u1_0.deleted=false 
+        and u1_0.email=?
+11/07/2025 20:15:27 [http-nio-8080-exec-9] INFO  com.lojatenis.config.LoggingAspect - ✅ Operação $Proxy158.findActiveByEmail concluída em 17ms
+11/07/2025 20:15:27 [http-nio-8080-exec-9] INFO  com.lojatenis.config.DatabaseLogger - ✅ [DATABASE] 11/07/2025 20:15:27 | Sucesso: $Proxy158.findActiveByEmail | Tempo: 18ms | Resultado: Optional[com.lojatenis.domain.Usuario@27619a11]
+11/07/2025 20:15:27 [http-nio-8080-exec-9] INFO  com.lojatenis.service.TenisService - Buscando todos os tênis ativos - Página: 0, Tamanho: 10
+11/07/2025 20:15:27 [http-nio-8080-exec-9] INFO  com.lojatenis.config.DatabaseLogger - 🔍 [DATABASE] 11/07/2025 20:15:27 | Executando: $Proxy168.findAllActive | Argumentos: [Page request [number: 0, size 10, sort: id: ASC]]
+11/07/2025 20:15:27 [http-nio-8080-exec-9] INFO  com.lojatenis.config.LoggingAspect - 🔍 Executando operação de banco: $Proxy168.findAllActive com argumentos: [Page request [number: 0, size 10, sort: id: ASC]]
+11/07/2025 20:15:27 [http-nio-8080-exec-9] DEBUG org.hibernate.SQL - 
+    select
+        t1_0.id,
+        t1_0.cor,
+        t1_0.created_at,
+        t1_0.deleted,
+        t1_0.descricao,
+        t1_0.marca,
+        t1_0.material,
+        t1_0.modelo,
+        t1_0.nome,
+        t1_0.preco,
+        t1_0.updated_at 
+    from
+        tenis t1_0 
+    where
+        t1_0.deleted=false 
+    order by
+        t1_0.id 
+    fetch
+        first ? rows only
+11/07/2025 20:15:27 [http-nio-8080-exec-9] INFO  com.lojatenis.config.LoggingAspect - ✅ Operação $Proxy168.findAllActive concluída em 4ms
+11/07/2025 20:15:27 [http-nio-8080-exec-9] INFO  com.lojatenis.config.DatabaseLogger - ✅ [DATABASE] 11/07/2025 20:15:27 | Sucesso: $Proxy168.findAllActive | Tempo: 4ms | Resultado: Page[2 items, 2 total]
+11/07/2025 20:15:27 [http-nio-8080-exec-9] DEBUG org.hibernate.SQL - 
+    select
+        c1_0.tenis_id,
+        c1_1.id,
+        c1_1.created_at,
+        c1_1.deleted,
+        c1_1.descricao,
+        c1_1.nome,
+        c1_1.updated_at 
+    from
+        tenis_categoria c1_0 
+    join
+        categorias c1_1 
+            on c1_1.id=c1_0.categoria_id 
+    where
+        c1_0.tenis_id=?
+11/07/2025 20:15:27 [http-nio-8080-exec-9] DEBUG org.hibernate.SQL - 
+    select
+        c1_0.tenis_id,
+        c1_1.id,
+        c1_1.created_at,
+        c1_1.deleted,
+        c1_1.descricao,
+        c1_1.nome,
+        c1_1.updated_at 
+    from
+        tenis_categoria c1_0 
+    join
+        categorias c1_1 
+            on c1_1.id=c1_0.categoria_id 
+    where
+        c1_0.tenis_id=?
+11/07/2025 20:18:09 [http-nio-8080-exec-2] INFO  com.lojatenis.config.DatabaseLogger - 🔍 [DATABASE] 11/07/2025 20:18:09 | Executando: $Proxy158.findActiveByEmail | Argumentos: ["admin@lojatenis.com"]
+11/07/2025 20:18:09 [http-nio-8080-exec-2] INFO  com.lojatenis.config.LoggingAspect - 🔍 Executando operação de banco: $Proxy158.findActiveByEmail com argumentos: [admin@lojatenis.com]
+11/07/2025 20:18:09 [http-nio-8080-exec-2] DEBUG org.hibernate.SQL - 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.deleted,
+        u1_0.email,
+        u1_0.endereco_id,
+        u1_0.nome,
+        u1_0.role,
+        u1_0.senha,
+        u1_0.telefone,
+        u1_0.updated_at 
+    from
+        usuarios u1_0 
+    where
+        u1_0.deleted=false 
+        and u1_0.email=?
+11/07/2025 20:18:09 [http-nio-8080-exec-2] INFO  com.lojatenis.config.LoggingAspect - ✅ Operação $Proxy158.findActiveByEmail concluída em 22ms
+11/07/2025 20:18:09 [http-nio-8080-exec-2] INFO  com.lojatenis.config.DatabaseLogger - ✅ [DATABASE] 11/07/2025 20:18:09 | Sucesso: $Proxy158.findActiveByEmail | Tempo: 22ms | Resultado: Optional[com.lojatenis.domain.Usuario@5c165bd3]
+11/07/2025 20:18:09 [http-nio-8080-exec-2] INFO  com.lojatenis.service.TenisService - Buscando todos os tênis ativos - Página: 0, Tamanho: 10
+11/07/2025 20:18:09 [http-nio-8080-exec-2] INFO  com.lojatenis.config.DatabaseLogger - 🔍 [DATABASE] 11/07/2025 20:18:09 | Executando: $Proxy168.findAllActive | Argumentos: [Page request [number: 0, size 10, sort: id: ASC]]
+11/07/2025 20:18:09 [http-nio-8080-exec-2] INFO  com.lojatenis.config.LoggingAspect - 🔍 Executando operação de banco: $Proxy168.findAllActive com argumentos: [Page request [number: 0, size 10, sort: id: ASC]]
+11/07/2025 20:18:09 [http-nio-8080-exec-2] DEBUG org.hibernate.SQL - 
+    select
+        t1_0.id,
+        t1_0.cor,
+        t1_0.created_at,
+        t1_0.deleted,
+        t1_0.descricao,
+        t1_0.marca,
+        t1_0.material,
+        t1_0.modelo,
+        t1_0.nome,
+        t1_0.preco,
+        t1_0.updated_at 
+    from
+        tenis t1_0 
+    where
+        t1_0.deleted=false 
+    order by
+        t1_0.id 
+    fetch
+        first ? rows only
+11/07/2025 20:18:09 [http-nio-8080-exec-2] INFO  com.lojatenis.config.LoggingAspect - ✅ Operação $Proxy168.findAllActive concluída em 5ms
+11/07/2025 20:18:09 [http-nio-8080-exec-2] INFO  com.lojatenis.config.DatabaseLogger - ✅ [DATABASE] 11/07/2025 20:18:09 | Sucesso: $Proxy168.findAllActive | Tempo: 6ms | Resultado: Page[2 items, 2 total]
+11/07/2025 20:18:09 [http-nio-8080-exec-2] DEBUG org.hibernate.SQL - 
+    select
+        c1_0.tenis_id,
+        c1_1.id,
+        c1_1.created_at,
+        c1_1.deleted,
+        c1_1.descricao,
+        c1_1.nome,
+        c1_1.updated_at 
+    from
+        tenis_categoria c1_0 
+    join
+        categorias c1_1 
+            on c1_1.id=c1_0.categoria_id 
+    where
+        c1_0.tenis_id=?
+11/07/2025 20:18:09 [http-nio-8080-exec-2] DEBUG org.hibernate.SQL - 
+    select
+        c1_0.tenis_id,
+        c1_1.id,
+        c1_1.created_at,
+        c1_1.deleted,
+        c1_1.descricao,
+        c1_1.nome,
+        c1_1.updated_at 
+    from
+        tenis_categoria c1_0 
+    join
+        categorias c1_1 
+            on c1_1.id=c1_0.categoria_id 
+    where
+        c1_0.tenis_id=?
+11/07/2025 20:26:47 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+11/07/2025 20:26:47 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+11/07/2025 20:26:47 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+11/07/2025 20:26:47 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+11/07/2025 20:26:47 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.

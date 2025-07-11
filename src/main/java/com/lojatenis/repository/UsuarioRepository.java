@@ -23,6 +23,11 @@ public interface UsuarioRepository extends JpaRepository<Usuario, Long> {
     @Query("SELECT u FROM Usuario u WHERE u.deleted = false AND u.email = :email")
     Optional<Usuario> findActiveByEmail(@Param("email") String email);
 
+    // ADICIONAR ESTE MÉTODO QUE ESTÁ FALTANDO
+    @Query("SELECT CASE WHEN COUNT(u) > 0 THEN true ELSE false END FROM Usuario u " +
+            "WHERE u.deleted = false AND u.id = :id")
+    boolean existsActiveById(@Param("id") Long id);
+
     @Query("SELECT CASE WHEN COUNT(u) > 0 THEN true ELSE false END FROM Usuario u " +
             "WHERE u.deleted = false AND u.email = :email")
     boolean existsActiveByEmail(@Param("email") String email);
